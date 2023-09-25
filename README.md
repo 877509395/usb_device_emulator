@@ -8,7 +8,7 @@ What:
 
 
 
-Setup:
+Build stm32f10x program:
 
 
 	pull master branch;
@@ -30,9 +30,14 @@ To run template.elf:
 		load 
 		break main
 		c
-			
+	
+
 tools/bushound:
 	
 	used to extract data from bushound log. checkformat.txt is log data from bushound. 
+
+
+src/powerlab_client:
+	windows test program	
 
 
