@@ -1,0 +1,628 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AP_OBJS	./libusb-win32-bin-1.2.6.0/examples/Makefile	/^AP_OBJS = bulk.o$/;"	m
+Altf	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	INT	Altf;			\/\/ Alt Interface number$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+BENCHMARK_DEVICE	./libusb-win32-bin-1.2.6.0/examples/bulk.c	10;"	d	file:
+BENCHMARK_DEVICE_COMMANDS	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^enum BENCHMARK_DEVICE_COMMANDS$/;"	g	file:
+BENCHMARK_DEVICE_TEST_TYPE	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^enum BENCHMARK_DEVICE_TEST_TYPE$/;"	g	file:
+BENCHMARK_TEST_PARAM	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^struct BENCHMARK_TEST_PARAM$/;"	s	file:
+BENCHMARK_TRANSFER_HANDLE	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^struct BENCHMARK_TRANSFER_HANDLE$/;"	s	file:
+BENCHMARK_TRANSFER_MODE	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^enum BENCHMARK_TRANSFER_MODE$/;"	g	file:
+BENCHMARK_TRANSFER_PARAM	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^struct BENCHMARK_TRANSFER_PARAM$/;"	s	file:
+BUF_SIZE	./libusb-win32-bin-1.2.6.0/examples/bulk.c	48;"	d	file:
+BUS_POWER	./usbhost.h	49;"	d
+Bench_GetTestType	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^int Bench_GetTestType(struct usb_dev_handle* dev, enum BENCHMARK_DEVICE_TEST_TYPE* testType, int intf)$/;"	f
+Bench_Open	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^struct usb_dev_handle* Bench_Open(WORD vid, WORD pid, INT interfaceNumber, INT altInterfaceNumber, struct usb_device** deviceForHandle)$/;"	f
+Bench_SetTestType	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^int Bench_SetTestType(struct usb_dev_handle* dev, enum BENCHMARK_DEVICE_TEST_TYPE testType, int intf)$/;"	f
+Buffer	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    BYTE Buffer[0];$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+BufferCount	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    INT BufferCount;	\/\/ Number of outstanding asynchronous transfers$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+BufferSize	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    INT BufferSize;		\/\/ Number of bytes to transfer$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+CFLAGS	./libusb-win32-bin-1.2.6.0/examples/Makefile	/^CFLAGS	= -g $(INCLUDE) -pthread$/;"	m
+CLEAR_FEATURE	./usbhost.h	55;"	d
+CONDBG	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	42;"	d	file:
+CONDBG0	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	47;"	d	file:
+CONERR	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	39;"	d	file:
+CONERR0	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	44;"	d	file:
+CONMSG	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	40;"	d	file:
+CONMSG0	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	45;"	d	file:
+CONVDAT	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	34;"	d	file:
+CONWRN	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	41;"	d	file:
+CONWRN0	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	46;"	d	file:
+CPU	./libusb-win32-bin-1.2.6.0/examples/Makefile	/^CPU	= i386$/;"	m
+Context	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	VOID* Context;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+CreateTransferParam	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^struct BENCHMARK_TRANSFER_PARAM* CreateTransferParam(struct BENCHMARK_TEST_PARAM* test, int endpointID)$/;"	f
+CreateVerifyBuffer	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^INT CreateVerifyBuffer(struct BENCHMARK_TEST_PARAM* testParam, WORD endpointMaxPacketSize)$/;"	f
+Data	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	CHAR* Data;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+DataMaxLength	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	INT DataMaxLength;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+Device	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	struct usb_device* Device;$/;"	m	struct:BENCHMARK_TEST_PARAM	typeref:struct:BENCHMARK_TEST_PARAM::usb_device	file:
+DeviceHandle	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    usb_dev_handle* DeviceHandle;$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+DisplayCriticalSection	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^CRITICAL_SECTION DisplayCriticalSection;$/;"	v
+ENDPOINT_TYPE	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	208;"	d	file:
+ENDPT_BULK	./usbhost.h	45;"	d
+ENDPT_CTRL	./usbhost.h	43;"	d
+ENDPT_IN	./usbhost.h	39;"	d
+ENDPT_INTR	./usbhost.h	46;"	d
+ENDPT_ISOCH	./usbhost.h	44;"	d
+ENDPT_OUT	./usbhost.h	40;"	d
+EP_IN	./libusb-win32-bin-1.2.6.0/examples/bulk.c	44;"	d	file:
+EP_OUT	./libusb-win32-bin-1.2.6.0/examples/bulk.c	45;"	d	file:
+EXTERNAL_POWER	./usbhost.h	50;"	d
+EndpointTypeDisplayString	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^const char* EndpointTypeDisplayString[] = {"Control", "Isochronous", "Bulk", "Interrupt", NULL};$/;"	v
+Ep	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	struct usb_endpoint_descriptor Ep;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	typeref:struct:BENCHMARK_TRANSFER_PARAM::usb_endpoint_descriptor	file:
+Ep	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    INT Ep;				\/\/ Endpoint number (1-15)$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+FTP	./libusb-win32-bin-1.2.6.0/examples/Makefile	/^FTP	= $(HOME)\/wnos\/shadow\/i386\/test$/;"	m
+FreeTransferParam	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^void FreeTransferParam(struct BENCHMARK_TRANSFER_PARAM** testTransferRef)$/;"	f
+GET_CLASS	./usbhost.h	20;"	d
+GET_CONFIGURATION	./usbhost.h	60;"	d
+GET_DESCRIPTOR	./usbhost.h	58;"	d
+GET_DEVICE	./usbhost.h	28;"	d
+GET_INTER	./usbhost.h	24;"	d
+GET_INTERFACE	./usbhost.h	62;"	d
+GET_INT_VAL	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	707;"	d	file:
+GET_STATUS	./usbhost.h	54;"	d
+GET_TEST	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    GET_TEST = 0x0F,$/;"	e	enum:BENCHMARK_DEVICE_COMMANDS	file:
+GetAverageBytesSec	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^void GetAverageBytesSec(struct BENCHMARK_TRANSFER_PARAM* transferParam, DOUBLE* bps)$/;"	f
+GetCurrentBytesSec	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^void GetCurrentBytesSec(struct BENCHMARK_TRANSFER_PARAM* transferParam, DOUBLE* bps)$/;"	f
+GetParamIntValue	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^BOOL GetParamIntValue(const char* src, const char* paramName, INT* returnValue)$/;"	f
+GetParamStrValue	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^char* GetParamStrValue(const char* src, const char* paramName)$/;"	f
+GetTestDeviceFromList	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^int GetTestDeviceFromList(struct BENCHMARK_TEST_PARAM* testParam)$/;"	f
+ID_DOS_TEXT	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	1590;"	d	file:
+ID_HELP_TEXT	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	1589;"	d	file:
+INCLUDE	./libusb-win32-bin-1.2.6.0/examples/Makefile	/^INCLUDE	= -I. -I ..\/ -L. -I..\/include$/;"	m
+INC_ROLL	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	206;"	d	file:
+IOCTL_USBFS_ALLOC_STREAMS	./linux_usbfs.h	175;"	d
+IOCTL_USBFS_BULK	./linux_usbfs.h	152;"	d
+IOCTL_USBFS_CLAIMINTF	./linux_usbfs.h	162;"	d
+IOCTL_USBFS_CLAIM_PORT	./linux_usbfs.h	171;"	d
+IOCTL_USBFS_CLEAR_HALT	./linux_usbfs.h	168;"	d
+IOCTL_USBFS_CONNECT	./linux_usbfs.h	170;"	d
+IOCTL_USBFS_CONNECTINFO	./linux_usbfs.h	164;"	d
+IOCTL_USBFS_CONTROL	./linux_usbfs.h	151;"	d
+IOCTL_USBFS_DISCARDURB	./linux_usbfs.h	158;"	d
+IOCTL_USBFS_DISCONNECT	./linux_usbfs.h	169;"	d
+IOCTL_USBFS_DISCONNECT_CLAIM	./linux_usbfs.h	174;"	d
+IOCTL_USBFS_FREE_STREAMS	./linux_usbfs.h	176;"	d
+IOCTL_USBFS_GETDRIVER	./linux_usbfs.h	156;"	d
+IOCTL_USBFS_GET_CAPABILITIES	./linux_usbfs.h	173;"	d
+IOCTL_USBFS_HUB_PORTINFO	./linux_usbfs.h	166;"	d
+IOCTL_USBFS_IOCTL	./linux_usbfs.h	165;"	d
+IOCTL_USBFS_REAPURB	./linux_usbfs.h	159;"	d
+IOCTL_USBFS_REAPURBNDELAY	./linux_usbfs.h	160;"	d
+IOCTL_USBFS_RELEASEINTF	./linux_usbfs.h	163;"	d
+IOCTL_USBFS_RELEASE_PORT	./linux_usbfs.h	172;"	d
+IOCTL_USBFS_RESET	./linux_usbfs.h	167;"	d
+IOCTL_USBFS_RESETEP	./linux_usbfs.h	153;"	d
+IOCTL_USBFS_SETCONFIG	./linux_usbfs.h	155;"	d
+IOCTL_USBFS_SETINTF	./linux_usbfs.h	154;"	d
+IOCTL_USBFS_SUBMITURB	./linux_usbfs.h	157;"	d
+InUse	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	BOOL InUse;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+Intf	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    INT Intf;			\/\/ Interface number$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+IsCancelled	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    BOOL IsCancelled;$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+IsRunning	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    BOOL IsRunning;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+IsUserAborted	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    BOOL IsUserAborted;$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+IsoPacketSize	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	INT IsoPacketSize; \/\/ Isochronous packet size (defaults to the endpoints max packet size)$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+IsoPacketSize	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	INT IsoPacketSize;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+LIBUSB_DLL_NAME	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	25;"	d	file:
+LIBUSB_HAS_INSTALL_DRIVER_NP	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	386;"	d
+LIBUSB_HAS_INSTALL_NEEDS_RESTART_NP	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	396;"	d
+LIBUSB_HAS_INSTALL_NP	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	399;"	d
+LIBUSB_HAS_INSTALL_SERVICE_NP	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	376;"	d
+LIBUSB_HAS_TOUCH_INF_FILE_NP	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	391;"	d
+LIBUSB_HAS_UNINSTALL_SERVICE_NP	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	381;"	d
+LIBUSB_PATH_MAX	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	21;"	d
+LIBUSB_USBFS_H	./linux_usbfs.h	22;"	d
+LOG	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	38;"	d	file:
+LastStartTick	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    DWORD LastStartTick;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+LastTick	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    DWORD LastTick;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+LastTransferred	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	LONG LastTransferred;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+MAX_BULK_BUFFER_LENGTH	./linux_usbfs.h	86;"	d
+MAX_CTRL_BUFFER_LENGTH	./linux_usbfs.h	87;"	d
+MAX_ISO_BUFFER_LENGTH	./linux_usbfs.h	85;"	d
+MAX_OUTSTANDING_TRANSFERS	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	30;"	d	file:
+MAX_USB_ADDR	./usbhost.h	99;"	d
+MY_CONFIG	./libusb-win32-bin-1.2.6.0/examples/bulk.c	40;"	d	file:
+MY_INTF	./libusb-win32-bin-1.2.6.0/examples/bulk.c	41;"	d	file:
+MY_PID	./libusb-win32-bin-1.2.6.0/examples/bulk.c	37;"	d	file:
+MY_VID	./libusb-win32-bin-1.2.6.0/examples/bulk.c	36;"	d	file:
+MaxPower	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  MaxPower;$/;"	m	struct:usb_config_descriptor
+NoTestSelect	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    BOOL NoTestSelect;	\/\/ If true, don't send control message to select the test type.$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+OutstandingTransferCount	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	INT OutstandingTransferCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+Packets	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    LONG Packets;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+ParseBenchmarkArgs	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^int ParseBenchmarkArgs(struct BENCHMARK_TEST_PARAM* testParams, int argc, char **argv)$/;"	f
+Pid	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    INT Pid;			\/\/ Porduct ID$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+Priority	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    INT Priority;		\/\/ Priority to run this thread at.$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+RQCLASS	./usbhost.h	9;"	d
+RQDEV	./usbhost.h	13;"	d
+RQENP	./usbhost.h	53;"	d
+RQEP	./usbhost.h	15;"	d
+RQIN	./usbhost.h	5;"	d
+RQINT	./usbhost.h	14;"	d
+RQOTHER	./usbhost.h	16;"	d
+RQOUT	./usbhost.h	6;"	d
+RQSTD	./usbhost.h	8;"	d
+RQVEND	./usbhost.h	10;"	d
+RQZRO	./usbhost.h	7;"	d
+Refresh	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    INT Refresh;		\/\/ Refresh interval (ms)$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+ResetRunningStatus	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^void ResetRunningStatus(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+Retry	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    INT Retry;			\/\/ Number for times to retry a timed out transfer before aborting$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+ReturnCode	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	INT ReturnCode;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+RunningErrorCount	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	INT RunningErrorCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+RunningTimeoutCount	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    INT RunningTimeoutCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+SET_ADDRESS	./usbhost.h	57;"	d
+SET_CLASS	./usbhost.h	19;"	d
+SET_CONFIGURATION	./usbhost.h	61;"	d
+SET_DESCRIPTOR	./usbhost.h	59;"	d
+SET_DEVICE	./usbhost.h	27;"	d
+SET_FEATURE	./usbhost.h	56;"	d
+SET_INTER	./usbhost.h	23;"	d
+SET_INTERFACE	./usbhost.h	63;"	d
+SET_TEST	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    SET_TEST = 0x0E,$/;"	e	enum:BENCHMARK_DEVICE_COMMANDS	file:
+SYNC_FRAME	./usbhost.h	64;"	d
+SYSFS_DEVICE_PATH	./linux_usbfs.h	27;"	d
+SetTestDefaults	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^void SetTestDefaults(struct BENCHMARK_TEST_PARAM* test)$/;"	f
+ShortTransferCount	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	INT ShortTransferCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+ShowCopyright	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^void ShowCopyright(void)$/;"	f
+ShowHelp	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^void ShowHelp(void)$/;"	f
+ShowRunningStatus	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^void ShowRunningStatus(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+ShowTestInfo	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^void ShowTestInfo(struct BENCHMARK_TEST_PARAM* testParam)$/;"	f
+ShowTransferInfo	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^void ShowTransferInfo(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+StartTick	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    DWORD StartTick;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TEST_ASYNC	./libusb-win32-bin-1.2.6.0/examples/bulk.c	23;"	d	file:
+TEST_BULK_READ	./libusb-win32-bin-1.2.6.0/examples/bulk.c	26;"	d	file:
+TEST_CLAIM_INTERFACE	./libusb-win32-bin-1.2.6.0/examples/bulk.c	19;"	d	file:
+TEST_SET_CONFIGURATION	./libusb-win32-bin-1.2.6.0/examples/bulk.c	16;"	d	file:
+TRANSFER_DISPLAY	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	203;"	d	file:
+TRANSFER_MODE_ASYNC	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    TRANSFER_MODE_ASYNC,$/;"	e	enum:BENCHMARK_TRANSFER_MODE	file:
+TRANSFER_MODE_SYNC	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    TRANSFER_MODE_SYNC,$/;"	e	enum:BENCHMARK_TRANSFER_MODE	file:
+TRANSFER_TIMEDOUT	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	50;"	d	file:
+TRANSFER_VERIFY_STATE	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^enum TRANSFER_VERIFY_STATE$/;"	g	file:
+TVS_DATA	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	TVS_DATA,$/;"	e	enum:TRANSFER_VERIFY_STATE	file:
+TVS_FIND_START	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	TVS_FIND_START,$/;"	e	enum:TRANSFER_VERIFY_STATE	file:
+TVS_KEY	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	TVS_KEY,$/;"	e	enum:TRANSFER_VERIFY_STATE	file:
+TVS_START	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	TVS_START,$/;"	e	enum:TRANSFER_VERIFY_STATE	file:
+Test	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    struct BENCHMARK_TEST_PARAM* Test;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	typeref:struct:BENCHMARK_TRANSFER_PARAM::BENCHMARK_TEST_PARAM	file:
+TestDisplayString	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^const char* TestDisplayString[] = {"None", "Read", "Write", "Loop", NULL};$/;"	v
+TestType	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    enum BENCHMARK_DEVICE_TEST_TYPE TestType;	\/\/ The benchmark test type.$/;"	m	struct:BENCHMARK_TEST_PARAM	typeref:enum:BENCHMARK_TEST_PARAM::BENCHMARK_DEVICE_TEST_TYPE	file:
+TestTypeLoop	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    TestTypeLoop	= TestTypeRead|TestTypeWrite,$/;"	e	enum:BENCHMARK_DEVICE_TEST_TYPE	file:
+TestTypeNone	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    TestTypeNone	= 0x00,$/;"	e	enum:BENCHMARK_DEVICE_TEST_TYPE	file:
+TestTypeRead	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    TestTypeRead	= 0x01,$/;"	e	enum:BENCHMARK_DEVICE_TEST_TYPE	file:
+TestTypeWrite	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    TestTypeWrite	= 0x02,$/;"	e	enum:BENCHMARK_DEVICE_TEST_TYPE	file:
+ThreadHandle	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    HANDLE ThreadHandle;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+ThreadID	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    DWORD ThreadID;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+Timeout	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    INT Timeout;		\/\/ Transfer timeout (ms)$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+TotalErrorCount	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	INT TotalErrorCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TotalTimeoutCount	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    INT TotalTimeoutCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TotalTransferred	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    LONGLONG TotalTransferred;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TransferAsync	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^int TransferAsync(struct BENCHMARK_TRANSFER_PARAM* transferParam, struct BENCHMARK_TRANSFER_HANDLE** handleRef)$/;"	f
+TransferHandleNextIndex	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	INT TransferHandleNextIndex;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TransferHandleWaitIndex	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	INT TransferHandleWaitIndex;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TransferHandles	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	struct BENCHMARK_TRANSFER_HANDLE TransferHandles[MAX_OUTSTANDING_TRANSFERS];$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	typeref:struct:BENCHMARK_TRANSFER_PARAM::BENCHMARK_TRANSFER_HANDLE	file:
+TransferMode	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	enum BENCHMARK_TRANSFER_MODE TransferMode;	\/\/ Sync or Async$/;"	m	struct:BENCHMARK_TEST_PARAM	typeref:enum:BENCHMARK_TEST_PARAM::BENCHMARK_TRANSFER_MODE	file:
+TransferSync	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^int TransferSync(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+TransferThreadProc	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^DWORD TransferThreadProc(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+USBDEVFS_DISCSIGNAL	./linux_usbfs.h	161;"	d
+USBFS_CAP_BULK_CONTINUATION	./linux_usbfs.h	126;"	d
+USBFS_CAP_BULK_SCATTER_GATHER	./linux_usbfs.h	128;"	d
+USBFS_CAP_NO_PACKET_SIZE_LIM	./linux_usbfs.h	127;"	d
+USBFS_CAP_REAP_AFTER_DISCONNECT	./linux_usbfs.h	129;"	d
+USBFS_CAP_ZERO_PACKET	./linux_usbfs.h	125;"	d
+USBFS_DISCONNECT_CLAIM_EXCEPT_DRIVER	./linux_usbfs.h	132;"	d
+USBFS_DISCONNECT_CLAIM_IF_DRIVER	./linux_usbfs.h	131;"	d
+USBFS_MAXDRIVERNAME	./linux_usbfs.h	59;"	d
+USBFS_URB_BULK_CONTINUATION	./linux_usbfs.h	68;"	d
+USBFS_URB_ISO_ASAP	./linux_usbfs.h	67;"	d
+USBFS_URB_QUEUE_BULK	./linux_usbfs.h	69;"	d
+USBFS_URB_SHORT_NOT_OK	./linux_usbfs.h	66;"	d
+USBFS_URB_TYPE_BULK	./linux_usbfs.h	/^	USBFS_URB_TYPE_BULK = 3,$/;"	e	enum:usbfs_urb_type
+USBFS_URB_TYPE_CONTROL	./linux_usbfs.h	/^	USBFS_URB_TYPE_CONTROL = 2,$/;"	e	enum:usbfs_urb_type
+USBFS_URB_TYPE_INTERRUPT	./linux_usbfs.h	/^	USBFS_URB_TYPE_INTERRUPT = 1,$/;"	e	enum:usbfs_urb_type
+USBFS_URB_TYPE_ISO	./linux_usbfs.h	/^	USBFS_URB_TYPE_ISO = 0,$/;"	e	enum:usbfs_urb_type
+USBFS_URB_ZERO_PACKET	./linux_usbfs.h	70;"	d
+USB_CFG_REMOTE_WAKEUP	./usbhost.h	36;"	d
+USB_CFG_SELF_POWER	./usbhost.h	35;"	d
+USB_CLASS_AUDIO	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	35;"	d
+USB_CLASS_AUDIO	./usbhost.h	77;"	d
+USB_CLASS_CCID	./usbhost.h	83;"	d
+USB_CLASS_COMM	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	36;"	d
+USB_CLASS_COMM	./usbhost.h	78;"	d
+USB_CLASS_DATA	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	41;"	d
+USB_CLASS_DATA	./usbhost.h	82;"	d
+USB_CLASS_DFU	./usbhost.h	84;"	d
+USB_CLASS_HID	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	37;"	d
+USB_CLASS_HID	./usbhost.h	79;"	d
+USB_CLASS_HUB	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	40;"	d
+USB_CLASS_HUB	./usbhost.h	81;"	d
+USB_CLASS_MASS_STORAGE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	39;"	d
+USB_CLASS_PER_INTERFACE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	34;"	d
+USB_CLASS_PRINTER	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	38;"	d
+USB_CLASS_PRINTER	./usbhost.h	80;"	d
+USB_CLASS_VENDOR_SPEC	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	42;"	d
+USB_CONFIG	./usbhost.h	70;"	d
+USB_DEVICE	./usbhost.h	69;"	d
+USB_DEVICE_REMOTE_WAKEUP	./usbhost.h	32;"	d
+USB_DT_CONFIG	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	48;"	d
+USB_DT_CONFIG_SIZE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	62;"	d
+USB_DT_DEVICE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	47;"	d
+USB_DT_DEVICE_SIZE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	61;"	d
+USB_DT_ENDPOINT	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	51;"	d
+USB_DT_ENDPOINT_AUDIO_SIZE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	65;"	d
+USB_DT_ENDPOINT_SIZE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	64;"	d
+USB_DT_HID	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	53;"	d
+USB_DT_HUB	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	56;"	d
+USB_DT_HUB_NONVAR_SIZE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	66;"	d
+USB_DT_INTERFACE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	50;"	d
+USB_DT_INTERFACE_SIZE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	63;"	d
+USB_DT_PHYSICAL	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	55;"	d
+USB_DT_REPORT	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	54;"	d
+USB_DT_STRING	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	49;"	d
+USB_ENDPNT	./usbhost.h	73;"	d
+USB_ENDPOINT_ADDRESS_MASK	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	115;"	d
+USB_ENDPOINT_DIR_MASK	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	116;"	d
+USB_ENDPOINT_HALT	./usbhost.h	31;"	d
+USB_ENDPOINT_IN	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	231;"	d
+USB_ENDPOINT_OUT	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	232;"	d
+USB_ENDPOINT_TYPE_BULK	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	121;"	d
+USB_ENDPOINT_TYPE_CONTROL	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	119;"	d
+USB_ENDPOINT_TYPE_INTERRUPT	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	122;"	d
+USB_ENDPOINT_TYPE_ISOCHRONOUS	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	120;"	d
+USB_ENDPOINT_TYPE_MASK	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	118;"	d
+USB_ERROR_BEGIN	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	235;"	d
+USB_H	./usbhost.h	2;"	d
+USB_INTERF	./usbhost.h	72;"	d
+USB_LE16_TO_CPU	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	241;"	d
+USB_MAXALTSETTING	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	144;"	d
+USB_MAXCONFIG	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	154;"	d
+USB_MAXENDPOINTS	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	99;"	d
+USB_MAXINTERFACES	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	125;"	d
+USB_MIN_POWER_DELAY	./usbhost.h	103;"	d
+USB_MST_H	./mst.h	2;"	d
+USB_PRINTER_BIDIRECTIONAL	./usbhost.h	88;"	d
+USB_PRINTER_IEEE1284	./usbhost.h	89;"	d
+USB_PRINTER_SUBCLASS_PRINTER	./usbhost.h	86;"	d
+USB_PRINTER_UNIDIRECTIONAL	./usbhost.h	87;"	d
+USB_PROTO_ACTIVCARD	./usbhost.h	94;"	d
+USB_PROTO_AT_CMD	./usbhost.h	97;"	d
+USB_PROTO_CCID	./usbhost.h	92;"	d
+USB_RECIP_DEVICE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	222;"	d
+USB_RECIP_ENDPOINT	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	224;"	d
+USB_RECIP_INTERFACE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	223;"	d
+USB_RECIP_OTHER	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	225;"	d
+USB_REQ_CLEAR_FEATURE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	204;"	d
+USB_REQ_GET_CONFIGURATION	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	211;"	d
+USB_REQ_GET_DESCRIPTOR	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	209;"	d
+USB_REQ_GET_INTERFACE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	213;"	d
+USB_REQ_GET_STATUS	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	203;"	d
+USB_REQ_SET_ADDRESS	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	208;"	d
+USB_REQ_SET_CONFIGURATION	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	212;"	d
+USB_REQ_SET_DESCRIPTOR	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	210;"	d
+USB_REQ_SET_FEATURE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	206;"	d
+USB_REQ_SET_INTERFACE	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	214;"	d
+USB_REQ_SYNCH_FRAME	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	215;"	d
+USB_RESET_TYPE_CYCLE_PORT	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	249;"	d
+USB_RESET_TYPE_FULL_RESET	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	250;"	d
+USB_RESET_TYPE_RESET_PORT	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	248;"	d
+USB_STRING	./usbhost.h	71;"	d
+USB_SUBCLASS_ACM	./usbhost.h	96;"	d
+USB_SUBCLASS_ACTIVCARD	./usbhost.h	93;"	d
+USB_SUBCLASS_CCID	./usbhost.h	91;"	d
+USB_TEST_MODE	./usbhost.h	33;"	d
+USB_TYPE_CLASS	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	218;"	d
+USB_TYPE_RESERVED	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	220;"	d
+USB_TYPE_STANDARD	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	217;"	d
+USB_TYPE_VENDOR	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	219;"	d
+UseList	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    BOOL UseList;		\/\/ Show the user a device list and let them choose a benchmark device. $/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+ValidateBenchmarkArgs	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^int ValidateBenchmarkArgs(struct BENCHMARK_TEST_PARAM* testParam)$/;"	f
+Verify	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	BOOL Verify;		\/\/ Only for loop and read test. If true, verifies data integrity. $/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+VerifyBuffer	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	BYTE* VerifyBuffer;		\/\/ Stores the verify test pattern for 1 packet.$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+VerifyBufferSize	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	WORD VerifyBufferSize;	\/\/ Size of VerifyBuffer$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+VerifyData	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^INT VerifyData(struct BENCHMARK_TRANSFER_PARAM* transferParam, BYTE* data, INT dataLength)$/;"	f
+VerifyDetails	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^	BOOL VerifyDetails;	\/\/ If true, prints detailed information for each invalid byte.$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+Vid	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^    INT Vid;			\/\/ Vendor ID$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+WaitForTestTransfer	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^void WaitForTestTransfer(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+_BENCHMARK_VER_ONLY	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	27;"	d	file:
+__APP_H__	./libusb-win32-bin-1.2.6.0/examples/app.h	2;"	d
+__USB_H__	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	2;"	d
+_usb_bulk_read	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_bulk_read_t _usb_bulk_read = NULL;$/;"	v	file:
+_usb_bulk_setup_async	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_bulk_setup_async_t _usb_bulk_setup_async = NULL;$/;"	v	file:
+_usb_bulk_write	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_bulk_write_t _usb_bulk_write = NULL;$/;"	v	file:
+_usb_claim_interface	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_claim_interface_t _usb_claim_interface = NULL;$/;"	v	file:
+_usb_clear_halt	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_clear_halt_t _usb_clear_halt = NULL;$/;"	v	file:
+_usb_close	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_close_t _usb_close = NULL;$/;"	v	file:
+_usb_control_msg	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_control_msg_t _usb_control_msg = NULL;$/;"	v	file:
+_usb_device	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_device_t _usb_device = NULL;$/;"	v	file:
+_usb_find_busses	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_find_busses_t _usb_find_busses = NULL;$/;"	v	file:
+_usb_find_devices	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_find_devices_t _usb_find_devices = NULL;$/;"	v	file:
+_usb_free_async	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_free_async_t _usb_free_async = NULL;$/;"	v	file:
+_usb_get_busses	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_get_busses_t _usb_get_busses = NULL;$/;"	v	file:
+_usb_get_descriptor	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_get_descriptor_t _usb_get_descriptor = NULL;$/;"	v	file:
+_usb_get_descriptor_by_endpoint	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_get_descriptor_by_endpoint_t _usb_get_descriptor_by_endpoint = NULL;$/;"	v	file:
+_usb_get_string	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_get_string_t _usb_get_string = NULL;$/;"	v	file:
+_usb_get_string_simple	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_get_string_simple_t _usb_get_string_simple = NULL;$/;"	v	file:
+_usb_get_version	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_get_version_t _usb_get_version = NULL;$/;"	v	file:
+_usb_init	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_init_t _usb_init = NULL;$/;"	v	file:
+_usb_install_driver_np	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_install_driver_np_t _usb_install_driver_np = NULL;$/;"	v	file:
+_usb_install_service_np	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_install_service_np_t _usb_install_service_np = NULL;$/;"	v	file:
+_usb_interrupt_read	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_interrupt_read_t _usb_interrupt_read = NULL;$/;"	v	file:
+_usb_interrupt_setup_async	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_interrupt_setup_async_t _usb_interrupt_setup_async = NULL;$/;"	v	file:
+_usb_interrupt_write	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_interrupt_write_t _usb_interrupt_write = NULL;$/;"	v	file:
+_usb_isochronous_setup_async	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_isochronous_setup_async_t _usb_isochronous_setup_async = NULL;$/;"	v	file:
+_usb_open	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_open_t _usb_open = NULL;$/;"	v	file:
+_usb_reap_async	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_reap_async_t _usb_reap_async = NULL;$/;"	v	file:
+_usb_release_interface	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_release_interface_t _usb_release_interface = NULL;$/;"	v	file:
+_usb_reset	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_reset_t _usb_reset = NULL;$/;"	v	file:
+_usb_reset_ex	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_reset_ex_t _usb_reset_ex = NULL;$/;"	v	file:
+_usb_resetep	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_resetep_t _usb_resetep = NULL;$/;"	v	file:
+_usb_set_altinterface	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_set_altinterface_t _usb_set_altinterface = NULL;$/;"	v	file:
+_usb_set_configuration	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_set_configuration_t _usb_set_configuration = NULL;$/;"	v	file:
+_usb_set_debug	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_set_debug_t _usb_set_debug = NULL;$/;"	v	file:
+_usb_strerror	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_strerror_t _usb_strerror = NULL;$/;"	v	file:
+_usb_submit_async	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_submit_async_t _usb_submit_async = NULL;$/;"	v	file:
+_usb_uninstall_service_np	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^static usb_uninstall_service_np_t _usb_uninstall_service_np = NULL;$/;"	v	file:
+actual_length	./linux_usbfs.h	/^	int actual_length;$/;"	m	struct:usbfs_urb
+actual_length	./linux_usbfs.h	/^	unsigned int actual_length;$/;"	m	struct:usbfs_iso_packet_desc
+altsetting	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_interface_descriptor *altsetting;$/;"	m	struct:usb_interface	typeref:struct:usb_interface::usb_interface_descriptor
+altsetting	./linux_usbfs.h	/^	unsigned int altsetting;$/;"	m	struct:usbfs_setinterface
+app	./libusb-win32-bin-1.2.6.0/examples/app.c	/^void app(usb_dev_handle *dev) {$/;"	f
+bAlternateSetting	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bAlternateSetting;$/;"	m	struct:usb_interface_descriptor
+bConfigurationValue	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bConfigurationValue;$/;"	m	struct:usb_config_descriptor
+bCountryCode	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bCountryCode;$/;"	m	struct:usb_hid_descriptor
+bDescriptorType	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_config_descriptor
+bDescriptorType	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_descriptor_header
+bDescriptorType	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_device_descriptor
+bDescriptorType	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_endpoint_descriptor
+bDescriptorType	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_hid_descriptor
+bDescriptorType	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_interface_descriptor
+bDescriptorType	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_string_descriptor
+bDescriptorType	./mst.h	/^        char bDescriptorType;$/;"	m	struct:usb_device_desc
+bDeviceClass	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bDeviceClass;$/;"	m	struct:usb_device_descriptor
+bDeviceClass	./mst.h	/^        char bDeviceClass;$/;"	m	struct:usb_device_desc
+bDeviceProtocol	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bDeviceProtocol;$/;"	m	struct:usb_device_descriptor
+bDeviceProtocol	./mst.h	/^        char bDeviceProtocol;$/;"	m	struct:usb_device_desc
+bDeviceSubClass	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bDeviceSubClass;$/;"	m	struct:usb_device_descriptor
+bDeviceSubClass	./mst.h	/^        char bDeviceSubClass;$/;"	m	struct:usb_device_desc
+bEndpointAddress	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bEndpointAddress;$/;"	m	struct:usb_endpoint_descriptor
+bInterfaceClass	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bInterfaceClass;$/;"	m	struct:usb_interface_descriptor
+bInterfaceNumber	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bInterfaceNumber;$/;"	m	struct:usb_interface_descriptor
+bInterfaceProtocol	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bInterfaceProtocol;$/;"	m	struct:usb_interface_descriptor
+bInterfaceSubClass	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bInterfaceSubClass;$/;"	m	struct:usb_interface_descriptor
+bInterval	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bInterval;$/;"	m	struct:usb_endpoint_descriptor
+bLength	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_config_descriptor
+bLength	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_descriptor_header
+bLength	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_device_descriptor
+bLength	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_endpoint_descriptor
+bLength	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_hid_descriptor
+bLength	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_interface_descriptor
+bLength	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_string_descriptor
+bLength	./mst.h	/^        char bLength;$/;"	m	struct:usb_device_desc
+bMaxPacketSize	./mst.h	/^        char bMaxPacketSize;$/;"	m	struct:usb_device_desc
+bMaxPacketSize0	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bMaxPacketSize0;$/;"	m	struct:usb_device_descriptor
+bNumConfigurations	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bNumConfigurations;$/;"	m	struct:usb_device_descriptor
+bNumConfigurations	./mst.h	/^        char bNumConfigurations;$/;"	m	struct:usb_device_desc
+bNumDescriptors	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bNumDescriptors;$/;"	m	struct:usb_hid_descriptor
+bNumEndpoints	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bNumEndpoints;$/;"	m	struct:usb_interface_descriptor
+bNumInterfaces	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bNumInterfaces;$/;"	m	struct:usb_config_descriptor
+bRefresh	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bRefresh;$/;"	m	struct:usb_endpoint_descriptor
+bRequest	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bRequest;$/;"	m	struct:usb_ctrl_setup
+bRequest	./linux_usbfs.h	/^	uint8_t  bRequest;$/;"	m	struct:usbfs_ctrltransfer
+bRequest	./mst.h	/^	uint8_t  bRequest;$/;"	m	struct:usbfs_ctrlcmd
+bRequestType	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bRequestType;$/;"	m	struct:usb_ctrl_setup
+bSynchAddress	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bSynchAddress;$/;"	m	struct:usb_endpoint_descriptor
+bcdDevice	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned short bcdDevice;$/;"	m	struct:usb_device_descriptor
+bcdDevice	./mst.h	/^        short int bcdDevice;$/;"	m	struct:usb_device_desc
+bcdHID	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned short bcdHID;$/;"	m	struct:usb_hid_descriptor
+bcdUSB	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned short bcdUSB;$/;"	m	struct:usb_device_descriptor
+bcdUSB	./mst.h	/^        short int bcdUSB;$/;"	m	struct:usb_device_desc
+bmAttributes	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bmAttributes;$/;"	m	struct:usb_config_descriptor
+bmAttributes	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  bmAttributes;$/;"	m	struct:usb_endpoint_descriptor
+bmRequestType	./linux_usbfs.h	/^	uint8_t  bmRequestType;$/;"	m	struct:usbfs_ctrltransfer
+bmRequestType	./mst.h	/^	uint8_t  bmRequestType;$/;"	m	struct:usbfs_ctrlcmd
+buffer	./linux_usbfs.h	/^	void *buffer;$/;"	m	struct:usbfs_urb
+buffer_length	./linux_usbfs.h	/^	int buffer_length;$/;"	m	struct:usbfs_urb
+bus	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_bus *bus;$/;"	m	struct:usb_device	typeref:struct:usb_device::usb_bus
+children	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_device **children;$/;"	m	struct:usb_device	typeref:struct:usb_device::usb_device
+config	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_config_descriptor *config;$/;"	m	struct:usb_device	typeref:struct:usb_device::usb_config_descriptor
+context	./linux_usbfs.h	/^        void 	     *context;$/;"	m	struct:usbdevfs_disconnectsignal
+data	./linux_usbfs.h	/^	void *data;	\/* param buffer (in, or out) *\/$/;"	m	struct:usbfs_ioctl
+data	./linux_usbfs.h	/^	void *data;$/;"	m	struct:usbfs_bulktransfer
+data	./linux_usbfs.h	/^	void *data;$/;"	m	struct:usbfs_ctrltransfer
+descriptor	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_device_descriptor descriptor;$/;"	m	struct:usb_device	typeref:struct:usb_device::usb_device_descriptor
+dev	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    void *dev;		\/* Darwin support *\/$/;"	m	struct:usb_device
+devices	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_device *devices;$/;"	m	struct:usb_bus	typeref:struct:usb_bus::usb_device
+devnum	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char devnum;$/;"	m	struct:usb_device
+devnum	./linux_usbfs.h	/^	unsigned int devnum;$/;"	m	struct:usbfs_connectinfo
+dirname	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    char dirname[LIBUSB_PATH_MAX];$/;"	m	struct:usb_bus
+dll	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    } dll;$/;"	m	struct:usb_version	typeref:struct:usb_version::__anon2
+driver	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    } driver;$/;"	m	struct:usb_version	typeref:struct:usb_version::__anon3
+driver	./linux_usbfs.h	/^	char driver[USBFS_MAXDRIVERNAME + 1];$/;"	m	struct:usbfs_disconnect_claim
+driver	./linux_usbfs.h	/^	char driver[USBFS_MAXDRIVERNAME + 1];$/;"	m	struct:usbfs_getdriver
+endpoint	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_endpoint_descriptor *endpoint;$/;"	m	struct:usb_interface_descriptor	typeref:struct:usb_interface_descriptor::usb_endpoint_descriptor
+endpoint	./linux_usbfs.h	/^	unsigned char endpoint;$/;"	m	struct:usbfs_urb
+ep	./linux_usbfs.h	/^	unsigned int ep;$/;"	m	struct:usbfs_bulktransfer
+eps	./linux_usbfs.h	/^	unsigned char eps[0];$/;"	m	struct:usbfs_streams
+error_count	./linux_usbfs.h	/^	int error_count;$/;"	m	struct:usbfs_urb
+extra	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char *extra;	\/* Extra descriptors *\/$/;"	m	struct:usb_config_descriptor
+extra	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char *extra;	\/* Extra descriptors *\/$/;"	m	struct:usb_endpoint_descriptor
+extra	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char *extra;	\/* Extra descriptors *\/$/;"	m	struct:usb_interface_descriptor
+extralen	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    int extralen;$/;"	m	struct:usb_config_descriptor
+extralen	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    int extralen;$/;"	m	struct:usb_endpoint_descriptor
+extralen	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    int extralen;$/;"	m	struct:usb_interface_descriptor
+filename	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    char filename[LIBUSB_PATH_MAX];$/;"	m	struct:usb_device
+flags	./linux_usbfs.h	/^	unsigned int flags;$/;"	m	struct:usbfs_disconnect_claim
+flags	./linux_usbfs.h	/^	unsigned int flags;$/;"	m	struct:usbfs_urb
+iConfiguration	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  iConfiguration;$/;"	m	struct:usb_config_descriptor
+iInterface	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  iInterface;$/;"	m	struct:usb_interface_descriptor
+iManufacturer	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  iManufacturer;$/;"	m	struct:usb_device_descriptor
+iManufacturer	./mst.h	/^        char iManufacturer;$/;"	m	struct:usb_device_desc
+iProduct	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  iProduct;$/;"	m	struct:usb_device_descriptor
+iProduct	./mst.h	/^        char iProduct;$/;"	m	struct:usb_device_desc
+iSerialNumber	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char  iSerialNumber;$/;"	m	struct:usb_device_descriptor
+iSerialNumber	./mst.h	/^        char iSerialNumber;$/;"	m	struct:usb_device_desc
+idProduct	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned short idProduct;$/;"	m	struct:usb_device_descriptor
+idProduct	./mst.h	/^        short int idProduct;$/;"	m	struct:usb_device_desc
+idVendor	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned short idVendor;$/;"	m	struct:usb_device_descriptor
+idVendor	./mst.h	/^        short int idVendor;$/;"	m	struct:usb_device_desc
+ifno	./linux_usbfs.h	/^	int ifno;	\/* interface 0..N ; negative numbers reserved *\/$/;"	m	struct:usbfs_ioctl
+interface	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_interface *interface;$/;"	m	struct:usb_config_descriptor	typeref:struct:usb_config_descriptor::usb_interface
+interface	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	13;"	d
+interface	./linux_usbfs.h	/^	unsigned int interface;$/;"	m	struct:usbfs_disconnect_claim
+interface	./linux_usbfs.h	/^	unsigned int interface;$/;"	m	struct:usbfs_getdriver
+interface	./linux_usbfs.h	/^	unsigned int interface;$/;"	m	struct:usbfs_setinterface
+ioctl_code	./linux_usbfs.h	/^	int ioctl_code;	\/* MUST encode size + direction of data so the$/;"	m	struct:usbfs_ioctl
+iso_frame_desc	./linux_usbfs.h	/^	struct usbfs_iso_packet_desc iso_frame_desc[0];$/;"	m	struct:usbfs_urb	typeref:struct:usbfs_urb::usbfs_iso_packet_desc
+len	./linux_usbfs.h	/^	unsigned int len;$/;"	m	struct:usbfs_bulktransfer
+length	./linux_usbfs.h	/^	unsigned int length;$/;"	m	struct:usbfs_iso_packet_desc
+location	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned long location;$/;"	m	struct:usb_bus
+main	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^int main(int argc, char** argv)$/;"	f
+main	./libusb-win32-bin-1.2.6.0/examples/bulk.c	/^int main(int argc, char**argv)$/;"	f
+major	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^        int major;$/;"	m	struct:usb_version::__anon2
+major	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^        int major;$/;"	m	struct:usb_version::__anon3
+micro	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^        int micro;$/;"	m	struct:usb_version::__anon2
+micro	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^        int micro;$/;"	m	struct:usb_version::__anon3
+minor	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^        int minor;$/;"	m	struct:usb_version::__anon2
+minor	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^        int minor;$/;"	m	struct:usb_version::__anon3
+nano	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^        int nano;$/;"	m	struct:usb_version::__anon2
+nano	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^        int nano;$/;"	m	struct:usb_version::__anon3
+next	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_bus *next, *prev;$/;"	m	struct:usb_bus	typeref:struct:usb_bus::usb_bus
+next	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_device *next, *prev;$/;"	m	struct:usb_device	typeref:struct:usb_device::usb_device
+num_altsetting	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    int num_altsetting;$/;"	m	struct:usb_interface
+num_children	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned char num_children;$/;"	m	struct:usb_device
+num_eps	./linux_usbfs.h	/^	unsigned int num_eps;$/;"	m	struct:usbfs_streams
+num_streams	./linux_usbfs.h	/^	unsigned int num_streams; \/* Not used by USBDEVFS_FREE_STREAMS *\/$/;"	m	struct:usbfs_streams
+number_of_packets	./linux_usbfs.h	/^		int number_of_packets;	\/* Only used for isoc urbs *\/$/;"	m	union:usbfs_urb::__anon1
+numports	./linux_usbfs.h	/^	unsigned char numports;$/;"	m	struct:usbfs_hub_portinfo
+open_dev	./libusb-win32-bin-1.2.6.0/examples/bulk.c	/^usb_dev_handle *open_dev(void)$/;"	f
+port	./linux_usbfs.h	/^	unsigned char port[127];	\/* port to device num mapping *\/$/;"	m	struct:usbfs_hub_portinfo
+prev	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_bus *next, *prev;$/;"	m	struct:usb_bus	typeref:struct:usb_bus::
+prev	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_device *next, *prev;$/;"	m	struct:usb_device	typeref:struct:usb_device::
+root_dev	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    struct usb_device *root_dev;$/;"	m	struct:usb_bus	typeref:struct:usb_bus::usb_device
+signr	./linux_usbfs.h	/^	unsigned int signr;$/;"	m	struct:usbfs_urb
+signr	./linux_usbfs.h	/^        unsigned int signr;$/;"	m	struct:usbdevfs_disconnectsignal
+slow	./linux_usbfs.h	/^	unsigned char slow;$/;"	m	struct:usbfs_connectinfo
+start_frame	./linux_usbfs.h	/^	int start_frame;$/;"	m	struct:usbfs_urb
+status	./linux_usbfs.h	/^	int status;$/;"	m	struct:usbfs_urb
+status	./linux_usbfs.h	/^	unsigned int status;$/;"	m	struct:usbfs_iso_packet_desc
+stream_id	./linux_usbfs.h	/^		unsigned int stream_id;	\/* Only used with bulk streams *\/$/;"	m	union:usbfs_urb::__anon1
+timeout	./linux_usbfs.h	/^	uint32_t timeout;	\/* in milliseconds *\/$/;"	m	struct:usbfs_ctrltransfer
+timeout	./linux_usbfs.h	/^	unsigned int timeout;	\/* in milliseconds *\/$/;"	m	struct:usbfs_bulktransfer
+transfer_bulk_async	./libusb-win32-bin-1.2.6.0/examples/bulk.c	/^static int transfer_bulk_async(usb_dev_handle *dev,$/;"	f	file:
+type	./linux_usbfs.h	/^	unsigned char type;$/;"	m	struct:usbfs_urb
+usb_bulk_read	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_bulk_read(usb_dev_handle *dev, int ep, char *bytes, int size,$/;"	f
+usb_bulk_read_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_bulk_read_t)(usb_dev_handle *dev, int ep, char *bytes,$/;"	t	file:
+usb_bulk_setup_async	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_bulk_setup_async(usb_dev_handle *dev, void **context,$/;"	f
+usb_bulk_setup_async_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_bulk_setup_async_t)(usb_dev_handle *dev, void **context,$/;"	t	file:
+usb_bulk_write	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_bulk_write(usb_dev_handle *dev, int ep, char *bytes, int size,$/;"	f
+usb_bulk_write_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_bulk_write_t)(usb_dev_handle *dev, int ep, char *bytes,$/;"	t	file:
+usb_bus	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^struct usb_bus$/;"	s
+usb_busses	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	313;"	d
+usb_claim_interface	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_claim_interface(usb_dev_handle *dev, int interface)$/;"	f
+usb_claim_interface_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_claim_interface_t)(usb_dev_handle *dev, int interface);$/;"	t	file:
+usb_clear_halt	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_clear_halt(usb_dev_handle *dev, unsigned int ep)$/;"	f
+usb_clear_halt_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_clear_halt_t)(usb_dev_handle *dev, unsigned int ep);$/;"	t	file:
+usb_close	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_close(usb_dev_handle *dev)$/;"	f
+usb_close_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_close_t)(usb_dev_handle *dev);$/;"	t	file:
+usb_config_descriptor	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^struct usb_config_descriptor$/;"	s
+usb_control_msg	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_control_msg(usb_dev_handle *dev, int requesttype, int request,$/;"	f
+usb_control_msg_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_control_msg_t)(usb_dev_handle *dev, int requesttype,$/;"	t	file:
+usb_ctrl_setup	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^struct usb_ctrl_setup$/;"	s
+usb_descriptor_header	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^struct usb_descriptor_header$/;"	s
+usb_dev_handle	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^typedef struct usb_dev_handle usb_dev_handle;$/;"	t	typeref:struct:usb_dev_handle
+usb_device	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^struct usb_device$/;"	s
+usb_device	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^struct usb_device *usb_device(usb_dev_handle *dev)$/;"	f
+usb_device_desc	./mst.h	/^struct usb_device_desc {$/;"	s
+usb_device_descriptor	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^struct usb_device_descriptor$/;"	s
+usb_device_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef struct usb_device * (*usb_device_t)(usb_dev_handle *dev);$/;"	t	typeref:struct:usb_device_t	file:
+usb_endpoint_descriptor	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^struct usb_endpoint_descriptor$/;"	s
+usb_find_busses	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_find_busses(void)$/;"	f
+usb_find_busses_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_find_busses_t)(void);$/;"	t	file:
+usb_find_devices	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_find_devices(void)$/;"	f
+usb_find_devices_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_find_devices_t)(void);$/;"	t	file:
+usb_find_interface	./libusb-win32-bin-1.2.6.0/examples/benchmark.c	/^struct usb_interface_descriptor* usb_find_interface(struct usb_config_descriptor* config_descriptor,$/;"	f
+usb_free_async	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_free_async(void **context)$/;"	f
+usb_free_async_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_free_async_t)(void **context);$/;"	t	file:
+usb_get_busses	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^struct usb_bus *usb_get_busses(void)$/;"	f
+usb_get_busses_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef struct usb_bus * (*usb_get_busses_t)(void);$/;"	t	typeref:struct:usb_get_busses_t	file:
+usb_get_descriptor	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_get_descriptor(usb_dev_handle *udev, unsigned char type,$/;"	f
+usb_get_descriptor_by_endpoint	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_get_descriptor_by_endpoint(usb_dev_handle *udev, int ep,$/;"	f
+usb_get_descriptor_by_endpoint_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_get_descriptor_by_endpoint_t)(usb_dev_handle *udev, int ep,$/;"	t	file:
+usb_get_descriptor_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_get_descriptor_t)(usb_dev_handle *udev, unsigned char type,$/;"	t	file:
+usb_get_string	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_get_string(usb_dev_handle *dev, int index, int langid, char *buf,$/;"	f
+usb_get_string_simple	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_get_string_simple(usb_dev_handle *dev, int index, char *buf,$/;"	f
+usb_get_string_simple_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_get_string_simple_t)(usb_dev_handle *dev, int index,$/;"	t	file:
+usb_get_string_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_get_string_t)(usb_dev_handle *dev, int index, int langid,$/;"	t	file:
+usb_get_version	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^const struct usb_version *usb_get_version(void)$/;"	f
+usb_get_version_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef const struct usb_version * (*usb_get_version_t)(void);$/;"	t	typeref:struct:usb_get_version_t	file:
+usb_hid_descriptor	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^struct usb_hid_descriptor$/;"	s
+usb_init	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^void usb_init(void)$/;"	f
+usb_init_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef void (*usb_init_t)(void);$/;"	t	file:
+usb_install_driver_np	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_install_driver_np(const char *inf_file)$/;"	f
+usb_install_driver_np_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_install_driver_np_t)(const char *inf_file);$/;"	t	file:
+usb_install_np	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	402;"	d
+usb_install_service_np	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_install_service_np(void)$/;"	f
+usb_install_service_np_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_install_service_np_t)(void);$/;"	t	file:
+usb_interface	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^struct usb_interface$/;"	s
+usb_interface_descriptor	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^struct usb_interface_descriptor$/;"	s
+usb_interrupt_read	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_interrupt_read(usb_dev_handle *dev, int ep, char *bytes, int size,$/;"	f
+usb_interrupt_read_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_interrupt_read_t)(usb_dev_handle *dev, int ep, char *bytes,$/;"	t	file:
+usb_interrupt_setup_async	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_interrupt_setup_async(usb_dev_handle *dev, void **context,$/;"	f
+usb_interrupt_setup_async_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_interrupt_setup_async_t)(usb_dev_handle *dev, void **context,$/;"	t	file:
+usb_interrupt_write	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_interrupt_write(usb_dev_handle *dev, int ep, char *bytes, int size,$/;"	f
+usb_interrupt_write_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_interrupt_write_t)(usb_dev_handle *dev, int ep, char *bytes,$/;"	t	file:
+usb_isochronous_setup_async	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_isochronous_setup_async(usb_dev_handle *dev, void **context,$/;"	f
+usb_isochronous_setup_async_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_isochronous_setup_async_t)(usb_dev_handle *dev,$/;"	t	file:
+usb_open	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^usb_dev_handle *usb_open(struct usb_device *dev)$/;"	f
+usb_open_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef usb_dev_handle * (*usb_open_t)(struct usb_device *dev);$/;"	t	file:
+usb_reap_async	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_reap_async(void *context, int timeout)$/;"	f
+usb_reap_async_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_reap_async_t)(void *context, int timeout);$/;"	t	file:
+usb_release_interface	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_release_interface(usb_dev_handle *dev, int interface)$/;"	f
+usb_release_interface_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_release_interface_t)(usb_dev_handle *dev, int interface);$/;"	t	file:
+usb_reset	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_reset(usb_dev_handle *dev)$/;"	f
+usb_reset_ex	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_reset_ex(usb_dev_handle *dev, unsigned int reset_type)$/;"	f
+usb_reset_ex_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_reset_ex_t)(usb_dev_handle *dev, unsigned int reset_type);$/;"	t	file:
+usb_reset_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_reset_t)(usb_dev_handle *dev);$/;"	t	file:
+usb_resetep	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_resetep(usb_dev_handle *dev, unsigned int ep)$/;"	f
+usb_resetep_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_resetep_t)(usb_dev_handle *dev, unsigned int ep);$/;"	t	file:
+usb_set_altinterface	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_set_altinterface(usb_dev_handle *dev, int alternate)$/;"	f
+usb_set_altinterface_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_set_altinterface_t)(usb_dev_handle *dev, int alternate);$/;"	t	file:
+usb_set_configuration	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_set_configuration(usb_dev_handle *dev, int configuration)$/;"	f
+usb_set_configuration_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_set_configuration_t)(usb_dev_handle *dev, int configuration);$/;"	t	file:
+usb_set_debug	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^void usb_set_debug(int level)$/;"	f
+usb_set_debug_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef void (*usb_set_debug_t)(int level);$/;"	t	file:
+usb_strerror	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^char *usb_strerror(void)$/;"	f
+usb_strerror_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef char * (*usb_strerror_t)(void);$/;"	t	file:
+usb_string_descriptor	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^struct usb_string_descriptor$/;"	s
+usb_submit_async	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_submit_async(void *context, char *bytes, int size)$/;"	f
+usb_submit_async_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_submit_async_t)(void *context, char *bytes, int size);$/;"	t	file:
+usb_uninstall_service_np	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^int usb_uninstall_service_np(void)$/;"	f
+usb_uninstall_service_np_t	./libusb-win32-bin-1.2.6.0/lib/dynamic/libusb_dyn.c	/^typedef int (*usb_uninstall_service_np_t)(void);$/;"	t	file:
+usb_version	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^struct usb_version$/;"	s
+usbdevfs_disconnectsignal	./linux_usbfs.h	/^struct usbdevfs_disconnectsignal {$/;"	s
+usbfs_bulktransfer	./linux_usbfs.h	/^struct usbfs_bulktransfer {$/;"	s
+usbfs_connectinfo	./linux_usbfs.h	/^struct usbfs_connectinfo {$/;"	s
+usbfs_ctrlcmd	./mst.h	/^struct usbfs_ctrlcmd {$/;"	s
+usbfs_ctrltransfer	./linux_usbfs.h	/^struct usbfs_ctrltransfer {$/;"	s
+usbfs_disconnect_claim	./linux_usbfs.h	/^struct usbfs_disconnect_claim {$/;"	s
+usbfs_getdriver	./linux_usbfs.h	/^struct usbfs_getdriver {$/;"	s
+usbfs_hub_portinfo	./linux_usbfs.h	/^struct usbfs_hub_portinfo {$/;"	s
+usbfs_ioctl	./linux_usbfs.h	/^struct usbfs_ioctl {$/;"	s
+usbfs_iso_packet_desc	./linux_usbfs.h	/^struct usbfs_iso_packet_desc {$/;"	s
+usbfs_setinterface	./linux_usbfs.h	/^struct usbfs_setinterface {$/;"	s
+usbfs_streams	./linux_usbfs.h	/^struct usbfs_streams {$/;"	s
+usbfs_urb	./linux_usbfs.h	/^struct usbfs_urb {$/;"	s
+usbfs_urb_type	./linux_usbfs.h	/^enum usbfs_urb_type {$/;"	g
+usercontext	./linux_usbfs.h	/^	void *usercontext;$/;"	m	struct:usbfs_urb
+wData	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned short wData[1];$/;"	m	struct:usb_string_descriptor
+wIndex	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned short wIndex;$/;"	m	struct:usb_ctrl_setup
+wIndex	./linux_usbfs.h	/^	uint16_t wIndex;$/;"	m	struct:usbfs_ctrltransfer
+wIndex	./mst.h	/^	uint16_t wIndex;$/;"	m	struct:usbfs_ctrlcmd
+wLength	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned short wLength;$/;"	m	struct:usb_ctrl_setup
+wLength	./linux_usbfs.h	/^	uint16_t wLength;$/;"	m	struct:usbfs_ctrltransfer
+wLength	./mst.h	/^	uint16_t wLength;$/;"	m	struct:usbfs_ctrlcmd
+wMaxPacketSize	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned short wMaxPacketSize;$/;"	m	struct:usb_endpoint_descriptor
+wTotalLength	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned short wTotalLength;$/;"	m	struct:usb_config_descriptor
+wValue	./libusb-win32-bin-1.2.6.0/include/lusb0_usb.h	/^    unsigned short wValue;$/;"	m	struct:usb_ctrl_setup
+wValue	./linux_usbfs.h	/^	uint16_t wValue;$/;"	m	struct:usbfs_ctrltransfer
+wValue	./mst.h	/^	uint16_t wValue;$/;"	m	struct:usbfs_ctrlcmd

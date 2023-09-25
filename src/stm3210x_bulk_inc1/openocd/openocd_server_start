@@ -1,0 +1,2 @@
+#!/usr/bin/ksh
+sudo openocd -f jlink-swd-stm32f10x.cfg

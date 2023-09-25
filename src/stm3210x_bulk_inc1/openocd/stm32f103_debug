@@ -1,0 +1,10 @@
+#!/usr/bin/ksh
+echo you need:
+echo "    target remote 127.0.0.1:3333"
+echo "    load"
+echo "    break main"
+echo "    c"
+echo 
+echo 
+arm-none-eabi-gdb ../User/template.elf
+

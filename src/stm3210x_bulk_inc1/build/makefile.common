@@ -1,0 +1,44 @@
+CROSS ?= arm-none-eabi-
+AR = $(CROSS)ar
+CC = $(CROSS)gcc
+OBJCOPY = $(CROSS)objcopy
+Q       = ""
+CFLAGS += -mthumb -mcpu=cortex-m3 -mfix-cortex-m3-ldrd -Os -Wall -MD
+CFLAGS += -ffunction-sections -fdata-sections -fno-exceptions
+CFLAGS += -DUSE_STDPERIPH_DRIVER
+
+LDFLAGS += -v -g -mthumb -mcpu=cortex-m3 -mfix-cortex-m3-ldrd -Wl,-cref -Wl,--gc-sections
+
+ARFLAG = cr
+
+ifeq ($(DEBUG), 1)
+	Q = 
+	P = @ \#
+else
+	Q = @
+	P = @
+endif
+
+%.bin: %.elf
+	$(P) printf "[\033[032mOBJC\033[0m] $< --> $@\n"
+	$(Q) $(OBJCOPY) -S -O binary $< $@
+
+%.hex: %.elf
+	$(P) printf "[\033[032mOBJC\033[0m] $< --> $@\n"
+	$(Q) $(OBJCOPY) -S -O ihex $< $@
+
+%.elf: $(OBJS)
+	$(P) printf "[\033[032m LD \033[0m] --> $@\n"
+	$(CC) $(LDFLAGS) $(OBJS) $(LINK_LIB_FLAGS) -o $@
+
+%.o: %.c
+	$(P) printf "[\033[032m CC \033[0m] $@\n"
+	$(CC) $(CFLAGS) -o $@ -c $<
+
+%.o: %.s
+	$(P) printf "[\033[032m CC \033[0m] $@\n"
+	$(Q) $(CC) $(CFLAGS) -o $@ -c $<
+
+%.o: %.S
+	$(P) printf "[\033[032m CC \033[0m] $@\n"
+	$(Q) $(CC) $(CFLAGS) -o $@ -c $<

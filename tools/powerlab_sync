@@ -1,0 +1,7 @@
+#!/usr/bin/ksh
+if (($#!=1))
+then
+	echo "Error usuage ."
+	exit 1;
+fi
+sshpass -p ${WIN_PASSWORD} scp -r $1 ${WIN_USER}@${WIN_IP}:C:\\Users\\${WIN_USER}\\Desktop

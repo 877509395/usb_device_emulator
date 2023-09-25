@@ -1,0 +1,147 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AP_OBJS	./Makefile	/^AP_OBJS = bulk.o$/;"	m
+Altf	./benchmark.c	/^	INT	Altf;			\/\/ Alt Interface number$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+BENCHMARK_DEVICE	./bulk.c	9;"	d	file:
+BENCHMARK_DEVICE_COMMANDS	./benchmark.c	/^enum BENCHMARK_DEVICE_COMMANDS$/;"	g	file:
+BENCHMARK_DEVICE_TEST_TYPE	./benchmark.c	/^enum BENCHMARK_DEVICE_TEST_TYPE$/;"	g	file:
+BENCHMARK_TEST_PARAM	./benchmark.c	/^struct BENCHMARK_TEST_PARAM$/;"	s	file:
+BENCHMARK_TRANSFER_HANDLE	./benchmark.c	/^struct BENCHMARK_TRANSFER_HANDLE$/;"	s	file:
+BENCHMARK_TRANSFER_MODE	./benchmark.c	/^enum BENCHMARK_TRANSFER_MODE$/;"	g	file:
+BENCHMARK_TRANSFER_PARAM	./benchmark.c	/^struct BENCHMARK_TRANSFER_PARAM$/;"	s	file:
+BUF_SIZE	./bulk.c	47;"	d	file:
+Bench_GetTestType	./benchmark.c	/^int Bench_GetTestType(struct usb_dev_handle* dev, enum BENCHMARK_DEVICE_TEST_TYPE* testType, int intf)$/;"	f
+Bench_Open	./benchmark.c	/^struct usb_dev_handle* Bench_Open(WORD vid, WORD pid, INT interfaceNumber, INT altInterfaceNumber, struct usb_device** deviceForHandle)$/;"	f
+Bench_SetTestType	./benchmark.c	/^int Bench_SetTestType(struct usb_dev_handle* dev, enum BENCHMARK_DEVICE_TEST_TYPE testType, int intf)$/;"	f
+Buffer	./benchmark.c	/^    BYTE Buffer[0];$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+BufferCount	./benchmark.c	/^    INT BufferCount;	\/\/ Number of outstanding asynchronous transfers$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+BufferSize	./benchmark.c	/^    INT BufferSize;		\/\/ Number of bytes to transfer$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+CFLAGS	./Makefile	/^CFLAGS	= -g $(INCLUDE) -pthread$/;"	m
+CONDBG	./benchmark.c	42;"	d	file:
+CONDBG0	./benchmark.c	47;"	d	file:
+CONERR	./benchmark.c	39;"	d	file:
+CONERR0	./benchmark.c	44;"	d	file:
+CONMSG	./benchmark.c	40;"	d	file:
+CONMSG0	./benchmark.c	45;"	d	file:
+CONVDAT	./benchmark.c	34;"	d	file:
+CONWRN	./benchmark.c	41;"	d	file:
+CONWRN0	./benchmark.c	46;"	d	file:
+CPU	./Makefile	/^CPU	= i386$/;"	m
+Context	./benchmark.c	/^	VOID* Context;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+CreateTransferParam	./benchmark.c	/^struct BENCHMARK_TRANSFER_PARAM* CreateTransferParam(struct BENCHMARK_TEST_PARAM* test, int endpointID)$/;"	f
+CreateVerifyBuffer	./benchmark.c	/^INT CreateVerifyBuffer(struct BENCHMARK_TEST_PARAM* testParam, WORD endpointMaxPacketSize)$/;"	f
+Data	./benchmark.c	/^	CHAR* Data;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+DataMaxLength	./benchmark.c	/^	INT DataMaxLength;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+Device	./benchmark.c	/^	struct usb_device* Device;$/;"	m	struct:BENCHMARK_TEST_PARAM	typeref:struct:BENCHMARK_TEST_PARAM::usb_device	file:
+DeviceHandle	./benchmark.c	/^    usb_dev_handle* DeviceHandle;$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+DisplayCriticalSection	./benchmark.c	/^CRITICAL_SECTION DisplayCriticalSection;$/;"	v
+ENDPOINT_TYPE	./benchmark.c	208;"	d	file:
+EP_IN	./bulk.c	43;"	d	file:
+EP_OUT	./bulk.c	44;"	d	file:
+EndpointTypeDisplayString	./benchmark.c	/^const char* EndpointTypeDisplayString[] = {"Control", "Isochronous", "Bulk", "Interrupt", NULL};$/;"	v
+Ep	./benchmark.c	/^	struct usb_endpoint_descriptor Ep;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	typeref:struct:BENCHMARK_TRANSFER_PARAM::usb_endpoint_descriptor	file:
+Ep	./benchmark.c	/^    INT Ep;				\/\/ Endpoint number (1-15)$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+FTP	./Makefile	/^FTP	= $(HOME)\/wnos\/shadow\/i386\/test$/;"	m
+FreeTransferParam	./benchmark.c	/^void FreeTransferParam(struct BENCHMARK_TRANSFER_PARAM** testTransferRef)$/;"	f
+GET_INT_VAL	./benchmark.c	707;"	d	file:
+GET_TEST	./benchmark.c	/^    GET_TEST = 0x0F,$/;"	e	enum:BENCHMARK_DEVICE_COMMANDS	file:
+GetAverageBytesSec	./benchmark.c	/^void GetAverageBytesSec(struct BENCHMARK_TRANSFER_PARAM* transferParam, DOUBLE* bps)$/;"	f
+GetCurrentBytesSec	./benchmark.c	/^void GetCurrentBytesSec(struct BENCHMARK_TRANSFER_PARAM* transferParam, DOUBLE* bps)$/;"	f
+GetParamIntValue	./benchmark.c	/^BOOL GetParamIntValue(const char* src, const char* paramName, INT* returnValue)$/;"	f
+GetParamStrValue	./benchmark.c	/^char* GetParamStrValue(const char* src, const char* paramName)$/;"	f
+GetTestDeviceFromList	./benchmark.c	/^int GetTestDeviceFromList(struct BENCHMARK_TEST_PARAM* testParam)$/;"	f
+ID_DOS_TEXT	./benchmark.c	1590;"	d	file:
+ID_HELP_TEXT	./benchmark.c	1589;"	d	file:
+INCLUDE	./Makefile	/^INCLUDE	= -I. -I ..\/ -L. -I..\/include$/;"	m
+INC_ROLL	./benchmark.c	206;"	d	file:
+InUse	./benchmark.c	/^	BOOL InUse;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+Intf	./benchmark.c	/^    INT Intf;			\/\/ Interface number$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+IsCancelled	./benchmark.c	/^    BOOL IsCancelled;$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+IsRunning	./benchmark.c	/^    BOOL IsRunning;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+IsUserAborted	./benchmark.c	/^    BOOL IsUserAborted;$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+IsoPacketSize	./benchmark.c	/^	INT IsoPacketSize; \/\/ Isochronous packet size (defaults to the endpoints max packet size)$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+IsoPacketSize	./benchmark.c	/^	INT IsoPacketSize;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+LOG	./benchmark.c	38;"	d	file:
+LastStartTick	./benchmark.c	/^    DWORD LastStartTick;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+LastTick	./benchmark.c	/^    DWORD LastTick;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+LastTransferred	./benchmark.c	/^	LONG LastTransferred;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+MAX_OUTSTANDING_TRANSFERS	./benchmark.c	30;"	d	file:
+MY_CONFIG	./bulk.c	39;"	d	file:
+MY_INTF	./bulk.c	40;"	d	file:
+MY_PID	./bulk.c	36;"	d	file:
+MY_VID	./bulk.c	35;"	d	file:
+NoTestSelect	./benchmark.c	/^    BOOL NoTestSelect;	\/\/ If true, don't send control message to select the test type.$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+OutstandingTransferCount	./benchmark.c	/^	INT OutstandingTransferCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+Packets	./benchmark.c	/^    LONG Packets;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+ParseBenchmarkArgs	./benchmark.c	/^int ParseBenchmarkArgs(struct BENCHMARK_TEST_PARAM* testParams, int argc, char **argv)$/;"	f
+Pid	./benchmark.c	/^    INT Pid;			\/\/ Porduct ID$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+Priority	./benchmark.c	/^    INT Priority;		\/\/ Priority to run this thread at.$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+Refresh	./benchmark.c	/^    INT Refresh;		\/\/ Refresh interval (ms)$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+ResetRunningStatus	./benchmark.c	/^void ResetRunningStatus(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+Retry	./benchmark.c	/^    INT Retry;			\/\/ Number for times to retry a timed out transfer before aborting$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+ReturnCode	./benchmark.c	/^	INT ReturnCode;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+RunningErrorCount	./benchmark.c	/^	INT RunningErrorCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+RunningTimeoutCount	./benchmark.c	/^    INT RunningTimeoutCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+SET_TEST	./benchmark.c	/^    SET_TEST = 0x0E,$/;"	e	enum:BENCHMARK_DEVICE_COMMANDS	file:
+SetTestDefaults	./benchmark.c	/^void SetTestDefaults(struct BENCHMARK_TEST_PARAM* test)$/;"	f
+ShortTransferCount	./benchmark.c	/^	INT ShortTransferCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+ShowCopyright	./benchmark.c	/^void ShowCopyright(void)$/;"	f
+ShowHelp	./benchmark.c	/^void ShowHelp(void)$/;"	f
+ShowRunningStatus	./benchmark.c	/^void ShowRunningStatus(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+ShowTestInfo	./benchmark.c	/^void ShowTestInfo(struct BENCHMARK_TEST_PARAM* testParam)$/;"	f
+ShowTransferInfo	./benchmark.c	/^void ShowTransferInfo(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+StartTick	./benchmark.c	/^    DWORD StartTick;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TEST_ASYNC	./bulk.c	22;"	d	file:
+TEST_BULK_READ	./bulk.c	25;"	d	file:
+TEST_CLAIM_INTERFACE	./bulk.c	18;"	d	file:
+TEST_SET_CONFIGURATION	./bulk.c	15;"	d	file:
+TRANSFER_DISPLAY	./benchmark.c	203;"	d	file:
+TRANSFER_MODE_ASYNC	./benchmark.c	/^    TRANSFER_MODE_ASYNC,$/;"	e	enum:BENCHMARK_TRANSFER_MODE	file:
+TRANSFER_MODE_SYNC	./benchmark.c	/^    TRANSFER_MODE_SYNC,$/;"	e	enum:BENCHMARK_TRANSFER_MODE	file:
+TRANSFER_TIMEDOUT	./benchmark.c	50;"	d	file:
+TRANSFER_VERIFY_STATE	./benchmark.c	/^enum TRANSFER_VERIFY_STATE$/;"	g	file:
+TVS_DATA	./benchmark.c	/^	TVS_DATA,$/;"	e	enum:TRANSFER_VERIFY_STATE	file:
+TVS_FIND_START	./benchmark.c	/^	TVS_FIND_START,$/;"	e	enum:TRANSFER_VERIFY_STATE	file:
+TVS_KEY	./benchmark.c	/^	TVS_KEY,$/;"	e	enum:TRANSFER_VERIFY_STATE	file:
+TVS_START	./benchmark.c	/^	TVS_START,$/;"	e	enum:TRANSFER_VERIFY_STATE	file:
+Test	./benchmark.c	/^    struct BENCHMARK_TEST_PARAM* Test;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	typeref:struct:BENCHMARK_TRANSFER_PARAM::BENCHMARK_TEST_PARAM	file:
+TestDisplayString	./benchmark.c	/^const char* TestDisplayString[] = {"None", "Read", "Write", "Loop", NULL};$/;"	v
+TestType	./benchmark.c	/^    enum BENCHMARK_DEVICE_TEST_TYPE TestType;	\/\/ The benchmark test type.$/;"	m	struct:BENCHMARK_TEST_PARAM	typeref:enum:BENCHMARK_TEST_PARAM::BENCHMARK_DEVICE_TEST_TYPE	file:
+TestTypeLoop	./benchmark.c	/^    TestTypeLoop	= TestTypeRead|TestTypeWrite,$/;"	e	enum:BENCHMARK_DEVICE_TEST_TYPE	file:
+TestTypeNone	./benchmark.c	/^    TestTypeNone	= 0x00,$/;"	e	enum:BENCHMARK_DEVICE_TEST_TYPE	file:
+TestTypeRead	./benchmark.c	/^    TestTypeRead	= 0x01,$/;"	e	enum:BENCHMARK_DEVICE_TEST_TYPE	file:
+TestTypeWrite	./benchmark.c	/^    TestTypeWrite	= 0x02,$/;"	e	enum:BENCHMARK_DEVICE_TEST_TYPE	file:
+ThreadHandle	./benchmark.c	/^    HANDLE ThreadHandle;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+ThreadID	./benchmark.c	/^    DWORD ThreadID;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+Timeout	./benchmark.c	/^    INT Timeout;		\/\/ Transfer timeout (ms)$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+TotalErrorCount	./benchmark.c	/^	INT TotalErrorCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TotalTimeoutCount	./benchmark.c	/^    INT TotalTimeoutCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TotalTransferred	./benchmark.c	/^    LONGLONG TotalTransferred;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TransferAsync	./benchmark.c	/^int TransferAsync(struct BENCHMARK_TRANSFER_PARAM* transferParam, struct BENCHMARK_TRANSFER_HANDLE** handleRef)$/;"	f
+TransferHandleNextIndex	./benchmark.c	/^	INT TransferHandleNextIndex;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TransferHandleWaitIndex	./benchmark.c	/^	INT TransferHandleWaitIndex;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TransferHandles	./benchmark.c	/^	struct BENCHMARK_TRANSFER_HANDLE TransferHandles[MAX_OUTSTANDING_TRANSFERS];$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	typeref:struct:BENCHMARK_TRANSFER_PARAM::BENCHMARK_TRANSFER_HANDLE	file:
+TransferMode	./benchmark.c	/^	enum BENCHMARK_TRANSFER_MODE TransferMode;	\/\/ Sync or Async$/;"	m	struct:BENCHMARK_TEST_PARAM	typeref:enum:BENCHMARK_TEST_PARAM::BENCHMARK_TRANSFER_MODE	file:
+TransferSync	./benchmark.c	/^int TransferSync(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+TransferThreadProc	./benchmark.c	/^DWORD TransferThreadProc(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+UseList	./benchmark.c	/^    BOOL UseList;		\/\/ Show the user a device list and let them choose a benchmark device. $/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+ValidateBenchmarkArgs	./benchmark.c	/^int ValidateBenchmarkArgs(struct BENCHMARK_TEST_PARAM* testParam)$/;"	f
+Verify	./benchmark.c	/^	BOOL Verify;		\/\/ Only for loop and read test. If true, verifies data integrity. $/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+VerifyBuffer	./benchmark.c	/^	BYTE* VerifyBuffer;		\/\/ Stores the verify test pattern for 1 packet.$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+VerifyBufferSize	./benchmark.c	/^	WORD VerifyBufferSize;	\/\/ Size of VerifyBuffer$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+VerifyData	./benchmark.c	/^INT VerifyData(struct BENCHMARK_TRANSFER_PARAM* transferParam, BYTE* data, INT dataLength)$/;"	f
+VerifyDetails	./benchmark.c	/^	BOOL VerifyDetails;	\/\/ If true, prints detailed information for each invalid byte.$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+Vid	./benchmark.c	/^    INT Vid;			\/\/ Vendor ID$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+WaitForTestTransfer	./benchmark.c	/^void WaitForTestTransfer(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+_BENCHMARK_VER_ONLY	./benchmark.c	27;"	d	file:
+__APP_H__	./app.h	2;"	d
+app	./app.c	/^void app(usb_dev_handle *dev) {$/;"	f
+main	./benchmark.c	/^int main(int argc, char** argv)$/;"	f
+main	./bulk.c	/^int main(int argc, char**argv)$/;"	f
+open_dev	./bulk.c	/^usb_dev_handle *open_dev(void)$/;"	f
+transfer_bulk_async	./bulk.c	/^static int transfer_bulk_async(usb_dev_handle *dev,$/;"	f	file:
+usb_find_interface	./benchmark.c	/^struct usb_interface_descriptor* usb_find_interface(struct usb_config_descriptor* config_descriptor,$/;"	f

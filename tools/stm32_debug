@@ -1,0 +1,15 @@
+#!/usr/bin/ksh
+echo you need:
+echo "    target remote 127.0.0.1:3333"
+echo "    load"
+echo "    break main"
+echo "    c"
+echo 
+echo 
+
+if (($#!=1 ))
+then
+	echo usage ./$0 to_be_debugged_file
+fi
+arm-none-eabi-gdb $1
+

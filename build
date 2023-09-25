@@ -1,0 +1,13 @@
+#!/usr/bin/ksh
+
+branches=`git branch|grep -F "* "|awk '{print $2}'`
+branches+=" "`git branch|grep "^ "`
+
+echo $0: branches = $branches
+
+for i in $branches
+do
+echo $i
+./build_branch $i
+
+done

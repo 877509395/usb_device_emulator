@@ -1,0 +1,429 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AP_OBJS	./examples/Makefile	/^AP_OBJS = bulk.o$/;"	m
+Altf	./examples/benchmark.c	/^	INT	Altf;			\/\/ Alt Interface number$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+BENCHMARK_DEVICE	./examples/bulk.c	6;"	d	file:
+BENCHMARK_DEVICE_COMMANDS	./examples/benchmark.c	/^enum BENCHMARK_DEVICE_COMMANDS$/;"	g	file:
+BENCHMARK_DEVICE_TEST_TYPE	./examples/benchmark.c	/^enum BENCHMARK_DEVICE_TEST_TYPE$/;"	g	file:
+BENCHMARK_TEST_PARAM	./examples/benchmark.c	/^struct BENCHMARK_TEST_PARAM$/;"	s	file:
+BENCHMARK_TRANSFER_HANDLE	./examples/benchmark.c	/^struct BENCHMARK_TRANSFER_HANDLE$/;"	s	file:
+BENCHMARK_TRANSFER_MODE	./examples/benchmark.c	/^enum BENCHMARK_TRANSFER_MODE$/;"	g	file:
+BENCHMARK_TRANSFER_PARAM	./examples/benchmark.c	/^struct BENCHMARK_TRANSFER_PARAM$/;"	s	file:
+BUF_SIZE	./examples/bulk.c	43;"	d	file:
+Bench_GetTestType	./examples/benchmark.c	/^int Bench_GetTestType(struct usb_dev_handle* dev, enum BENCHMARK_DEVICE_TEST_TYPE* testType, int intf)$/;"	f
+Bench_Open	./examples/benchmark.c	/^struct usb_dev_handle* Bench_Open(WORD vid, WORD pid, INT interfaceNumber, INT altInterfaceNumber, struct usb_device** deviceForHandle)$/;"	f
+Bench_SetTestType	./examples/benchmark.c	/^int Bench_SetTestType(struct usb_dev_handle* dev, enum BENCHMARK_DEVICE_TEST_TYPE testType, int intf)$/;"	f
+Buffer	./examples/benchmark.c	/^    BYTE Buffer[0];$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+BufferCount	./examples/benchmark.c	/^    INT BufferCount;	\/\/ Number of outstanding asynchronous transfers$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+BufferSize	./examples/benchmark.c	/^    INT BufferSize;		\/\/ Number of bytes to transfer$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+CFLAGS	./examples/Makefile	/^CFLAGS	= -g $(INCLUDE) -pthread$/;"	m
+CONDBG	./examples/benchmark.c	42;"	d	file:
+CONDBG0	./examples/benchmark.c	47;"	d	file:
+CONERR	./examples/benchmark.c	39;"	d	file:
+CONERR0	./examples/benchmark.c	44;"	d	file:
+CONMSG	./examples/benchmark.c	40;"	d	file:
+CONMSG0	./examples/benchmark.c	45;"	d	file:
+CONVDAT	./examples/benchmark.c	34;"	d	file:
+CONWRN	./examples/benchmark.c	41;"	d	file:
+CONWRN0	./examples/benchmark.c	46;"	d	file:
+CPU	./examples/Makefile	/^CPU	= i386$/;"	m
+Context	./examples/benchmark.c	/^	VOID* Context;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+CreateTransferParam	./examples/benchmark.c	/^struct BENCHMARK_TRANSFER_PARAM* CreateTransferParam(struct BENCHMARK_TEST_PARAM* test, int endpointID)$/;"	f
+CreateVerifyBuffer	./examples/benchmark.c	/^INT CreateVerifyBuffer(struct BENCHMARK_TEST_PARAM* testParam, WORD endpointMaxPacketSize)$/;"	f
+Data	./examples/benchmark.c	/^	CHAR* Data;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+DataMaxLength	./examples/benchmark.c	/^	INT DataMaxLength;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+Device	./examples/benchmark.c	/^	struct usb_device* Device;$/;"	m	struct:BENCHMARK_TEST_PARAM	typeref:struct:BENCHMARK_TEST_PARAM::usb_device	file:
+DeviceHandle	./examples/benchmark.c	/^    usb_dev_handle* DeviceHandle;$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+DisplayCriticalSection	./examples/benchmark.c	/^CRITICAL_SECTION DisplayCriticalSection;$/;"	v
+ENDPOINT_TYPE	./examples/benchmark.c	208;"	d	file:
+EP_IN	./examples/bulk.c	39;"	d	file:
+EP_OUT	./examples/bulk.c	40;"	d	file:
+EndpointTypeDisplayString	./examples/benchmark.c	/^const char* EndpointTypeDisplayString[] = {"Control", "Isochronous", "Bulk", "Interrupt", NULL};$/;"	v
+Ep	./examples/benchmark.c	/^	struct usb_endpoint_descriptor Ep;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	typeref:struct:BENCHMARK_TRANSFER_PARAM::usb_endpoint_descriptor	file:
+Ep	./examples/benchmark.c	/^    INT Ep;				\/\/ Endpoint number (1-15)$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+FTP	./examples/Makefile	/^FTP	= $(HOME)\/wnos\/shadow\/i386\/test$/;"	m
+FreeTransferParam	./examples/benchmark.c	/^void FreeTransferParam(struct BENCHMARK_TRANSFER_PARAM** testTransferRef)$/;"	f
+GET_INT_VAL	./examples/benchmark.c	707;"	d	file:
+GET_TEST	./examples/benchmark.c	/^    GET_TEST = 0x0F,$/;"	e	enum:BENCHMARK_DEVICE_COMMANDS	file:
+GetAverageBytesSec	./examples/benchmark.c	/^void GetAverageBytesSec(struct BENCHMARK_TRANSFER_PARAM* transferParam, DOUBLE* bps)$/;"	f
+GetCurrentBytesSec	./examples/benchmark.c	/^void GetCurrentBytesSec(struct BENCHMARK_TRANSFER_PARAM* transferParam, DOUBLE* bps)$/;"	f
+GetParamIntValue	./examples/benchmark.c	/^BOOL GetParamIntValue(const char* src, const char* paramName, INT* returnValue)$/;"	f
+GetParamStrValue	./examples/benchmark.c	/^char* GetParamStrValue(const char* src, const char* paramName)$/;"	f
+GetTestDeviceFromList	./examples/benchmark.c	/^int GetTestDeviceFromList(struct BENCHMARK_TEST_PARAM* testParam)$/;"	f
+ID_DOS_TEXT	./examples/benchmark.c	1590;"	d	file:
+ID_HELP_TEXT	./examples/benchmark.c	1589;"	d	file:
+INCLUDE	./examples/Makefile	/^INCLUDE	= -I. -I ..\/ -L. -I..\/include$/;"	m
+INC_ROLL	./examples/benchmark.c	206;"	d	file:
+InUse	./examples/benchmark.c	/^	BOOL InUse;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+Intf	./examples/benchmark.c	/^    INT Intf;			\/\/ Interface number$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+IsCancelled	./examples/benchmark.c	/^    BOOL IsCancelled;$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+IsRunning	./examples/benchmark.c	/^    BOOL IsRunning;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+IsUserAborted	./examples/benchmark.c	/^    BOOL IsUserAborted;$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+IsoPacketSize	./examples/benchmark.c	/^	INT IsoPacketSize; \/\/ Isochronous packet size (defaults to the endpoints max packet size)$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+IsoPacketSize	./examples/benchmark.c	/^	INT IsoPacketSize;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+LIBUSB_DLL_NAME	./lib/dynamic/libusb_dyn.c	25;"	d	file:
+LIBUSB_HAS_INSTALL_DRIVER_NP	./include/lusb0_usb.h	386;"	d
+LIBUSB_HAS_INSTALL_NEEDS_RESTART_NP	./include/lusb0_usb.h	396;"	d
+LIBUSB_HAS_INSTALL_NP	./include/lusb0_usb.h	399;"	d
+LIBUSB_HAS_INSTALL_SERVICE_NP	./include/lusb0_usb.h	376;"	d
+LIBUSB_HAS_TOUCH_INF_FILE_NP	./include/lusb0_usb.h	391;"	d
+LIBUSB_HAS_UNINSTALL_SERVICE_NP	./include/lusb0_usb.h	381;"	d
+LIBUSB_PATH_MAX	./include/lusb0_usb.h	21;"	d
+LOG	./examples/benchmark.c	38;"	d	file:
+LastStartTick	./examples/benchmark.c	/^    DWORD LastStartTick;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+LastTick	./examples/benchmark.c	/^    DWORD LastTick;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+LastTransferred	./examples/benchmark.c	/^	LONG LastTransferred;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+MAX_OUTSTANDING_TRANSFERS	./examples/benchmark.c	30;"	d	file:
+MY_CONFIG	./examples/bulk.c	35;"	d	file:
+MY_INTF	./examples/bulk.c	36;"	d	file:
+MY_PID	./examples/bulk.c	32;"	d	file:
+MY_VID	./examples/bulk.c	31;"	d	file:
+MaxPower	./include/lusb0_usb.h	/^    unsigned char  MaxPower;$/;"	m	struct:usb_config_descriptor
+NoTestSelect	./examples/benchmark.c	/^    BOOL NoTestSelect;	\/\/ If true, don't send control message to select the test type.$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+OutstandingTransferCount	./examples/benchmark.c	/^	INT OutstandingTransferCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+Packets	./examples/benchmark.c	/^    LONG Packets;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+ParseBenchmarkArgs	./examples/benchmark.c	/^int ParseBenchmarkArgs(struct BENCHMARK_TEST_PARAM* testParams, int argc, char **argv)$/;"	f
+Pid	./examples/benchmark.c	/^    INT Pid;			\/\/ Porduct ID$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+Priority	./examples/benchmark.c	/^    INT Priority;		\/\/ Priority to run this thread at.$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+Refresh	./examples/benchmark.c	/^    INT Refresh;		\/\/ Refresh interval (ms)$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+ResetRunningStatus	./examples/benchmark.c	/^void ResetRunningStatus(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+Retry	./examples/benchmark.c	/^    INT Retry;			\/\/ Number for times to retry a timed out transfer before aborting$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+ReturnCode	./examples/benchmark.c	/^	INT ReturnCode;$/;"	m	struct:BENCHMARK_TRANSFER_HANDLE	file:
+RunningErrorCount	./examples/benchmark.c	/^	INT RunningErrorCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+RunningTimeoutCount	./examples/benchmark.c	/^    INT RunningTimeoutCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+SET_TEST	./examples/benchmark.c	/^    SET_TEST = 0x0E,$/;"	e	enum:BENCHMARK_DEVICE_COMMANDS	file:
+SetTestDefaults	./examples/benchmark.c	/^void SetTestDefaults(struct BENCHMARK_TEST_PARAM* test)$/;"	f
+ShortTransferCount	./examples/benchmark.c	/^	INT ShortTransferCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+ShowCopyright	./examples/benchmark.c	/^void ShowCopyright(void)$/;"	f
+ShowHelp	./examples/benchmark.c	/^void ShowHelp(void)$/;"	f
+ShowRunningStatus	./examples/benchmark.c	/^void ShowRunningStatus(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+ShowTestInfo	./examples/benchmark.c	/^void ShowTestInfo(struct BENCHMARK_TEST_PARAM* testParam)$/;"	f
+ShowTransferInfo	./examples/benchmark.c	/^void ShowTransferInfo(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+StartTick	./examples/benchmark.c	/^    DWORD StartTick;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TEST_ASYNC	./examples/bulk.c	19;"	d	file:
+TEST_BULK_READ	./examples/bulk.c	22;"	d	file:
+TEST_CLAIM_INTERFACE	./examples/bulk.c	15;"	d	file:
+TEST_SET_CONFIGURATION	./examples/bulk.c	12;"	d	file:
+TRANSFER_DISPLAY	./examples/benchmark.c	203;"	d	file:
+TRANSFER_MODE_ASYNC	./examples/benchmark.c	/^    TRANSFER_MODE_ASYNC,$/;"	e	enum:BENCHMARK_TRANSFER_MODE	file:
+TRANSFER_MODE_SYNC	./examples/benchmark.c	/^    TRANSFER_MODE_SYNC,$/;"	e	enum:BENCHMARK_TRANSFER_MODE	file:
+TRANSFER_TIMEDOUT	./examples/benchmark.c	50;"	d	file:
+TRANSFER_VERIFY_STATE	./examples/benchmark.c	/^enum TRANSFER_VERIFY_STATE$/;"	g	file:
+TVS_DATA	./examples/benchmark.c	/^	TVS_DATA,$/;"	e	enum:TRANSFER_VERIFY_STATE	file:
+TVS_FIND_START	./examples/benchmark.c	/^	TVS_FIND_START,$/;"	e	enum:TRANSFER_VERIFY_STATE	file:
+TVS_KEY	./examples/benchmark.c	/^	TVS_KEY,$/;"	e	enum:TRANSFER_VERIFY_STATE	file:
+TVS_START	./examples/benchmark.c	/^	TVS_START,$/;"	e	enum:TRANSFER_VERIFY_STATE	file:
+Test	./examples/benchmark.c	/^    struct BENCHMARK_TEST_PARAM* Test;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	typeref:struct:BENCHMARK_TRANSFER_PARAM::BENCHMARK_TEST_PARAM	file:
+TestDisplayString	./examples/benchmark.c	/^const char* TestDisplayString[] = {"None", "Read", "Write", "Loop", NULL};$/;"	v
+TestType	./examples/benchmark.c	/^    enum BENCHMARK_DEVICE_TEST_TYPE TestType;	\/\/ The benchmark test type.$/;"	m	struct:BENCHMARK_TEST_PARAM	typeref:enum:BENCHMARK_TEST_PARAM::BENCHMARK_DEVICE_TEST_TYPE	file:
+TestTypeLoop	./examples/benchmark.c	/^    TestTypeLoop	= TestTypeRead|TestTypeWrite,$/;"	e	enum:BENCHMARK_DEVICE_TEST_TYPE	file:
+TestTypeNone	./examples/benchmark.c	/^    TestTypeNone	= 0x00,$/;"	e	enum:BENCHMARK_DEVICE_TEST_TYPE	file:
+TestTypeRead	./examples/benchmark.c	/^    TestTypeRead	= 0x01,$/;"	e	enum:BENCHMARK_DEVICE_TEST_TYPE	file:
+TestTypeWrite	./examples/benchmark.c	/^    TestTypeWrite	= 0x02,$/;"	e	enum:BENCHMARK_DEVICE_TEST_TYPE	file:
+ThreadHandle	./examples/benchmark.c	/^    HANDLE ThreadHandle;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+ThreadID	./examples/benchmark.c	/^    DWORD ThreadID;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+Timeout	./examples/benchmark.c	/^    INT Timeout;		\/\/ Transfer timeout (ms)$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+TotalErrorCount	./examples/benchmark.c	/^	INT TotalErrorCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TotalTimeoutCount	./examples/benchmark.c	/^    INT TotalTimeoutCount;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TotalTransferred	./examples/benchmark.c	/^    LONGLONG TotalTransferred;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TransferAsync	./examples/benchmark.c	/^int TransferAsync(struct BENCHMARK_TRANSFER_PARAM* transferParam, struct BENCHMARK_TRANSFER_HANDLE** handleRef)$/;"	f
+TransferHandleNextIndex	./examples/benchmark.c	/^	INT TransferHandleNextIndex;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TransferHandleWaitIndex	./examples/benchmark.c	/^	INT TransferHandleWaitIndex;$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	file:
+TransferHandles	./examples/benchmark.c	/^	struct BENCHMARK_TRANSFER_HANDLE TransferHandles[MAX_OUTSTANDING_TRANSFERS];$/;"	m	struct:BENCHMARK_TRANSFER_PARAM	typeref:struct:BENCHMARK_TRANSFER_PARAM::BENCHMARK_TRANSFER_HANDLE	file:
+TransferMode	./examples/benchmark.c	/^	enum BENCHMARK_TRANSFER_MODE TransferMode;	\/\/ Sync or Async$/;"	m	struct:BENCHMARK_TEST_PARAM	typeref:enum:BENCHMARK_TEST_PARAM::BENCHMARK_TRANSFER_MODE	file:
+TransferSync	./examples/benchmark.c	/^int TransferSync(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+TransferThreadProc	./examples/benchmark.c	/^DWORD TransferThreadProc(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+USB_CLASS_AUDIO	./include/lusb0_usb.h	35;"	d
+USB_CLASS_COMM	./include/lusb0_usb.h	36;"	d
+USB_CLASS_DATA	./include/lusb0_usb.h	41;"	d
+USB_CLASS_HID	./include/lusb0_usb.h	37;"	d
+USB_CLASS_HUB	./include/lusb0_usb.h	40;"	d
+USB_CLASS_MASS_STORAGE	./include/lusb0_usb.h	39;"	d
+USB_CLASS_PER_INTERFACE	./include/lusb0_usb.h	34;"	d
+USB_CLASS_PRINTER	./include/lusb0_usb.h	38;"	d
+USB_CLASS_VENDOR_SPEC	./include/lusb0_usb.h	42;"	d
+USB_DT_CONFIG	./include/lusb0_usb.h	48;"	d
+USB_DT_CONFIG_SIZE	./include/lusb0_usb.h	62;"	d
+USB_DT_DEVICE	./include/lusb0_usb.h	47;"	d
+USB_DT_DEVICE_SIZE	./include/lusb0_usb.h	61;"	d
+USB_DT_ENDPOINT	./include/lusb0_usb.h	51;"	d
+USB_DT_ENDPOINT_AUDIO_SIZE	./include/lusb0_usb.h	65;"	d
+USB_DT_ENDPOINT_SIZE	./include/lusb0_usb.h	64;"	d
+USB_DT_HID	./include/lusb0_usb.h	53;"	d
+USB_DT_HUB	./include/lusb0_usb.h	56;"	d
+USB_DT_HUB_NONVAR_SIZE	./include/lusb0_usb.h	66;"	d
+USB_DT_INTERFACE	./include/lusb0_usb.h	50;"	d
+USB_DT_INTERFACE_SIZE	./include/lusb0_usb.h	63;"	d
+USB_DT_PHYSICAL	./include/lusb0_usb.h	55;"	d
+USB_DT_REPORT	./include/lusb0_usb.h	54;"	d
+USB_DT_STRING	./include/lusb0_usb.h	49;"	d
+USB_ENDPOINT_ADDRESS_MASK	./include/lusb0_usb.h	115;"	d
+USB_ENDPOINT_DIR_MASK	./include/lusb0_usb.h	116;"	d
+USB_ENDPOINT_IN	./include/lusb0_usb.h	231;"	d
+USB_ENDPOINT_OUT	./include/lusb0_usb.h	232;"	d
+USB_ENDPOINT_TYPE_BULK	./include/lusb0_usb.h	121;"	d
+USB_ENDPOINT_TYPE_CONTROL	./include/lusb0_usb.h	119;"	d
+USB_ENDPOINT_TYPE_INTERRUPT	./include/lusb0_usb.h	122;"	d
+USB_ENDPOINT_TYPE_ISOCHRONOUS	./include/lusb0_usb.h	120;"	d
+USB_ENDPOINT_TYPE_MASK	./include/lusb0_usb.h	118;"	d
+USB_ERROR_BEGIN	./include/lusb0_usb.h	235;"	d
+USB_LE16_TO_CPU	./include/lusb0_usb.h	241;"	d
+USB_MAXALTSETTING	./include/lusb0_usb.h	144;"	d
+USB_MAXCONFIG	./include/lusb0_usb.h	154;"	d
+USB_MAXENDPOINTS	./include/lusb0_usb.h	99;"	d
+USB_MAXINTERFACES	./include/lusb0_usb.h	125;"	d
+USB_RECIP_DEVICE	./include/lusb0_usb.h	222;"	d
+USB_RECIP_ENDPOINT	./include/lusb0_usb.h	224;"	d
+USB_RECIP_INTERFACE	./include/lusb0_usb.h	223;"	d
+USB_RECIP_OTHER	./include/lusb0_usb.h	225;"	d
+USB_REQ_CLEAR_FEATURE	./include/lusb0_usb.h	204;"	d
+USB_REQ_GET_CONFIGURATION	./include/lusb0_usb.h	211;"	d
+USB_REQ_GET_DESCRIPTOR	./include/lusb0_usb.h	209;"	d
+USB_REQ_GET_INTERFACE	./include/lusb0_usb.h	213;"	d
+USB_REQ_GET_STATUS	./include/lusb0_usb.h	203;"	d
+USB_REQ_SET_ADDRESS	./include/lusb0_usb.h	208;"	d
+USB_REQ_SET_CONFIGURATION	./include/lusb0_usb.h	212;"	d
+USB_REQ_SET_DESCRIPTOR	./include/lusb0_usb.h	210;"	d
+USB_REQ_SET_FEATURE	./include/lusb0_usb.h	206;"	d
+USB_REQ_SET_INTERFACE	./include/lusb0_usb.h	214;"	d
+USB_REQ_SYNCH_FRAME	./include/lusb0_usb.h	215;"	d
+USB_RESET_TYPE_CYCLE_PORT	./include/lusb0_usb.h	249;"	d
+USB_RESET_TYPE_FULL_RESET	./include/lusb0_usb.h	250;"	d
+USB_RESET_TYPE_RESET_PORT	./include/lusb0_usb.h	248;"	d
+USB_TYPE_CLASS	./include/lusb0_usb.h	218;"	d
+USB_TYPE_RESERVED	./include/lusb0_usb.h	220;"	d
+USB_TYPE_STANDARD	./include/lusb0_usb.h	217;"	d
+USB_TYPE_VENDOR	./include/lusb0_usb.h	219;"	d
+UseList	./examples/benchmark.c	/^    BOOL UseList;		\/\/ Show the user a device list and let them choose a benchmark device. $/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+ValidateBenchmarkArgs	./examples/benchmark.c	/^int ValidateBenchmarkArgs(struct BENCHMARK_TEST_PARAM* testParam)$/;"	f
+Verify	./examples/benchmark.c	/^	BOOL Verify;		\/\/ Only for loop and read test. If true, verifies data integrity. $/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+VerifyBuffer	./examples/benchmark.c	/^	BYTE* VerifyBuffer;		\/\/ Stores the verify test pattern for 1 packet.$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+VerifyBufferSize	./examples/benchmark.c	/^	WORD VerifyBufferSize;	\/\/ Size of VerifyBuffer$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+VerifyData	./examples/benchmark.c	/^INT VerifyData(struct BENCHMARK_TRANSFER_PARAM* transferParam, BYTE* data, INT dataLength)$/;"	f
+VerifyDetails	./examples/benchmark.c	/^	BOOL VerifyDetails;	\/\/ If true, prints detailed information for each invalid byte.$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+Vid	./examples/benchmark.c	/^    INT Vid;			\/\/ Vendor ID$/;"	m	struct:BENCHMARK_TEST_PARAM	file:
+WaitForTestTransfer	./examples/benchmark.c	/^void WaitForTestTransfer(struct BENCHMARK_TRANSFER_PARAM* transferParam)$/;"	f
+_BENCHMARK_VER_ONLY	./examples/benchmark.c	27;"	d	file:
+__USB_H__	./include/lusb0_usb.h	2;"	d
+_usb_bulk_read	./lib/dynamic/libusb_dyn.c	/^static usb_bulk_read_t _usb_bulk_read = NULL;$/;"	v	file:
+_usb_bulk_setup_async	./lib/dynamic/libusb_dyn.c	/^static usb_bulk_setup_async_t _usb_bulk_setup_async = NULL;$/;"	v	file:
+_usb_bulk_write	./lib/dynamic/libusb_dyn.c	/^static usb_bulk_write_t _usb_bulk_write = NULL;$/;"	v	file:
+_usb_claim_interface	./lib/dynamic/libusb_dyn.c	/^static usb_claim_interface_t _usb_claim_interface = NULL;$/;"	v	file:
+_usb_clear_halt	./lib/dynamic/libusb_dyn.c	/^static usb_clear_halt_t _usb_clear_halt = NULL;$/;"	v	file:
+_usb_close	./lib/dynamic/libusb_dyn.c	/^static usb_close_t _usb_close = NULL;$/;"	v	file:
+_usb_control_msg	./lib/dynamic/libusb_dyn.c	/^static usb_control_msg_t _usb_control_msg = NULL;$/;"	v	file:
+_usb_device	./lib/dynamic/libusb_dyn.c	/^static usb_device_t _usb_device = NULL;$/;"	v	file:
+_usb_find_busses	./lib/dynamic/libusb_dyn.c	/^static usb_find_busses_t _usb_find_busses = NULL;$/;"	v	file:
+_usb_find_devices	./lib/dynamic/libusb_dyn.c	/^static usb_find_devices_t _usb_find_devices = NULL;$/;"	v	file:
+_usb_free_async	./lib/dynamic/libusb_dyn.c	/^static usb_free_async_t _usb_free_async = NULL;$/;"	v	file:
+_usb_get_busses	./lib/dynamic/libusb_dyn.c	/^static usb_get_busses_t _usb_get_busses = NULL;$/;"	v	file:
+_usb_get_descriptor	./lib/dynamic/libusb_dyn.c	/^static usb_get_descriptor_t _usb_get_descriptor = NULL;$/;"	v	file:
+_usb_get_descriptor_by_endpoint	./lib/dynamic/libusb_dyn.c	/^static usb_get_descriptor_by_endpoint_t _usb_get_descriptor_by_endpoint = NULL;$/;"	v	file:
+_usb_get_string	./lib/dynamic/libusb_dyn.c	/^static usb_get_string_t _usb_get_string = NULL;$/;"	v	file:
+_usb_get_string_simple	./lib/dynamic/libusb_dyn.c	/^static usb_get_string_simple_t _usb_get_string_simple = NULL;$/;"	v	file:
+_usb_get_version	./lib/dynamic/libusb_dyn.c	/^static usb_get_version_t _usb_get_version = NULL;$/;"	v	file:
+_usb_init	./lib/dynamic/libusb_dyn.c	/^static usb_init_t _usb_init = NULL;$/;"	v	file:
+_usb_install_driver_np	./lib/dynamic/libusb_dyn.c	/^static usb_install_driver_np_t _usb_install_driver_np = NULL;$/;"	v	file:
+_usb_install_service_np	./lib/dynamic/libusb_dyn.c	/^static usb_install_service_np_t _usb_install_service_np = NULL;$/;"	v	file:
+_usb_interrupt_read	./lib/dynamic/libusb_dyn.c	/^static usb_interrupt_read_t _usb_interrupt_read = NULL;$/;"	v	file:
+_usb_interrupt_setup_async	./lib/dynamic/libusb_dyn.c	/^static usb_interrupt_setup_async_t _usb_interrupt_setup_async = NULL;$/;"	v	file:
+_usb_interrupt_write	./lib/dynamic/libusb_dyn.c	/^static usb_interrupt_write_t _usb_interrupt_write = NULL;$/;"	v	file:
+_usb_isochronous_setup_async	./lib/dynamic/libusb_dyn.c	/^static usb_isochronous_setup_async_t _usb_isochronous_setup_async = NULL;$/;"	v	file:
+_usb_open	./lib/dynamic/libusb_dyn.c	/^static usb_open_t _usb_open = NULL;$/;"	v	file:
+_usb_reap_async	./lib/dynamic/libusb_dyn.c	/^static usb_reap_async_t _usb_reap_async = NULL;$/;"	v	file:
+_usb_release_interface	./lib/dynamic/libusb_dyn.c	/^static usb_release_interface_t _usb_release_interface = NULL;$/;"	v	file:
+_usb_reset	./lib/dynamic/libusb_dyn.c	/^static usb_reset_t _usb_reset = NULL;$/;"	v	file:
+_usb_reset_ex	./lib/dynamic/libusb_dyn.c	/^static usb_reset_ex_t _usb_reset_ex = NULL;$/;"	v	file:
+_usb_resetep	./lib/dynamic/libusb_dyn.c	/^static usb_resetep_t _usb_resetep = NULL;$/;"	v	file:
+_usb_set_altinterface	./lib/dynamic/libusb_dyn.c	/^static usb_set_altinterface_t _usb_set_altinterface = NULL;$/;"	v	file:
+_usb_set_configuration	./lib/dynamic/libusb_dyn.c	/^static usb_set_configuration_t _usb_set_configuration = NULL;$/;"	v	file:
+_usb_set_debug	./lib/dynamic/libusb_dyn.c	/^static usb_set_debug_t _usb_set_debug = NULL;$/;"	v	file:
+_usb_strerror	./lib/dynamic/libusb_dyn.c	/^static usb_strerror_t _usb_strerror = NULL;$/;"	v	file:
+_usb_submit_async	./lib/dynamic/libusb_dyn.c	/^static usb_submit_async_t _usb_submit_async = NULL;$/;"	v	file:
+_usb_uninstall_service_np	./lib/dynamic/libusb_dyn.c	/^static usb_uninstall_service_np_t _usb_uninstall_service_np = NULL;$/;"	v	file:
+altsetting	./include/lusb0_usb.h	/^    struct usb_interface_descriptor *altsetting;$/;"	m	struct:usb_interface	typeref:struct:usb_interface::usb_interface_descriptor
+bAlternateSetting	./include/lusb0_usb.h	/^    unsigned char  bAlternateSetting;$/;"	m	struct:usb_interface_descriptor
+bConfigurationValue	./include/lusb0_usb.h	/^    unsigned char  bConfigurationValue;$/;"	m	struct:usb_config_descriptor
+bCountryCode	./include/lusb0_usb.h	/^    unsigned char  bCountryCode;$/;"	m	struct:usb_hid_descriptor
+bDescriptorType	./include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_config_descriptor
+bDescriptorType	./include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_descriptor_header
+bDescriptorType	./include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_device_descriptor
+bDescriptorType	./include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_endpoint_descriptor
+bDescriptorType	./include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_hid_descriptor
+bDescriptorType	./include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_interface_descriptor
+bDescriptorType	./include/lusb0_usb.h	/^    unsigned char  bDescriptorType;$/;"	m	struct:usb_string_descriptor
+bDeviceClass	./include/lusb0_usb.h	/^    unsigned char  bDeviceClass;$/;"	m	struct:usb_device_descriptor
+bDeviceProtocol	./include/lusb0_usb.h	/^    unsigned char  bDeviceProtocol;$/;"	m	struct:usb_device_descriptor
+bDeviceSubClass	./include/lusb0_usb.h	/^    unsigned char  bDeviceSubClass;$/;"	m	struct:usb_device_descriptor
+bEndpointAddress	./include/lusb0_usb.h	/^    unsigned char  bEndpointAddress;$/;"	m	struct:usb_endpoint_descriptor
+bInterfaceClass	./include/lusb0_usb.h	/^    unsigned char  bInterfaceClass;$/;"	m	struct:usb_interface_descriptor
+bInterfaceNumber	./include/lusb0_usb.h	/^    unsigned char  bInterfaceNumber;$/;"	m	struct:usb_interface_descriptor
+bInterfaceProtocol	./include/lusb0_usb.h	/^    unsigned char  bInterfaceProtocol;$/;"	m	struct:usb_interface_descriptor
+bInterfaceSubClass	./include/lusb0_usb.h	/^    unsigned char  bInterfaceSubClass;$/;"	m	struct:usb_interface_descriptor
+bInterval	./include/lusb0_usb.h	/^    unsigned char  bInterval;$/;"	m	struct:usb_endpoint_descriptor
+bLength	./include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_config_descriptor
+bLength	./include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_descriptor_header
+bLength	./include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_device_descriptor
+bLength	./include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_endpoint_descriptor
+bLength	./include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_hid_descriptor
+bLength	./include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_interface_descriptor
+bLength	./include/lusb0_usb.h	/^    unsigned char  bLength;$/;"	m	struct:usb_string_descriptor
+bMaxPacketSize0	./include/lusb0_usb.h	/^    unsigned char  bMaxPacketSize0;$/;"	m	struct:usb_device_descriptor
+bNumConfigurations	./include/lusb0_usb.h	/^    unsigned char  bNumConfigurations;$/;"	m	struct:usb_device_descriptor
+bNumDescriptors	./include/lusb0_usb.h	/^    unsigned char  bNumDescriptors;$/;"	m	struct:usb_hid_descriptor
+bNumEndpoints	./include/lusb0_usb.h	/^    unsigned char  bNumEndpoints;$/;"	m	struct:usb_interface_descriptor
+bNumInterfaces	./include/lusb0_usb.h	/^    unsigned char  bNumInterfaces;$/;"	m	struct:usb_config_descriptor
+bRefresh	./include/lusb0_usb.h	/^    unsigned char  bRefresh;$/;"	m	struct:usb_endpoint_descriptor
+bRequest	./include/lusb0_usb.h	/^    unsigned char  bRequest;$/;"	m	struct:usb_ctrl_setup
+bRequestType	./include/lusb0_usb.h	/^    unsigned char  bRequestType;$/;"	m	struct:usb_ctrl_setup
+bSynchAddress	./include/lusb0_usb.h	/^    unsigned char  bSynchAddress;$/;"	m	struct:usb_endpoint_descriptor
+bcdDevice	./include/lusb0_usb.h	/^    unsigned short bcdDevice;$/;"	m	struct:usb_device_descriptor
+bcdHID	./include/lusb0_usb.h	/^    unsigned short bcdHID;$/;"	m	struct:usb_hid_descriptor
+bcdUSB	./include/lusb0_usb.h	/^    unsigned short bcdUSB;$/;"	m	struct:usb_device_descriptor
+bmAttributes	./include/lusb0_usb.h	/^    unsigned char  bmAttributes;$/;"	m	struct:usb_config_descriptor
+bmAttributes	./include/lusb0_usb.h	/^    unsigned char  bmAttributes;$/;"	m	struct:usb_endpoint_descriptor
+bus	./include/lusb0_usb.h	/^    struct usb_bus *bus;$/;"	m	struct:usb_device	typeref:struct:usb_device::usb_bus
+children	./include/lusb0_usb.h	/^    struct usb_device **children;$/;"	m	struct:usb_device	typeref:struct:usb_device::usb_device
+config	./include/lusb0_usb.h	/^    struct usb_config_descriptor *config;$/;"	m	struct:usb_device	typeref:struct:usb_device::usb_config_descriptor
+descriptor	./include/lusb0_usb.h	/^    struct usb_device_descriptor descriptor;$/;"	m	struct:usb_device	typeref:struct:usb_device::usb_device_descriptor
+dev	./include/lusb0_usb.h	/^    void *dev;		\/* Darwin support *\/$/;"	m	struct:usb_device
+devices	./include/lusb0_usb.h	/^    struct usb_device *devices;$/;"	m	struct:usb_bus	typeref:struct:usb_bus::usb_device
+devnum	./include/lusb0_usb.h	/^    unsigned char devnum;$/;"	m	struct:usb_device
+dirname	./include/lusb0_usb.h	/^    char dirname[LIBUSB_PATH_MAX];$/;"	m	struct:usb_bus
+dll	./include/lusb0_usb.h	/^    } dll;$/;"	m	struct:usb_version	typeref:struct:usb_version::__anon1
+driver	./include/lusb0_usb.h	/^    } driver;$/;"	m	struct:usb_version	typeref:struct:usb_version::__anon2
+endpoint	./include/lusb0_usb.h	/^    struct usb_endpoint_descriptor *endpoint;$/;"	m	struct:usb_interface_descriptor	typeref:struct:usb_interface_descriptor::usb_endpoint_descriptor
+extra	./include/lusb0_usb.h	/^    unsigned char *extra;	\/* Extra descriptors *\/$/;"	m	struct:usb_config_descriptor
+extra	./include/lusb0_usb.h	/^    unsigned char *extra;	\/* Extra descriptors *\/$/;"	m	struct:usb_endpoint_descriptor
+extra	./include/lusb0_usb.h	/^    unsigned char *extra;	\/* Extra descriptors *\/$/;"	m	struct:usb_interface_descriptor
+extralen	./include/lusb0_usb.h	/^    int extralen;$/;"	m	struct:usb_config_descriptor
+extralen	./include/lusb0_usb.h	/^    int extralen;$/;"	m	struct:usb_endpoint_descriptor
+extralen	./include/lusb0_usb.h	/^    int extralen;$/;"	m	struct:usb_interface_descriptor
+filename	./include/lusb0_usb.h	/^    char filename[LIBUSB_PATH_MAX];$/;"	m	struct:usb_device
+iConfiguration	./include/lusb0_usb.h	/^    unsigned char  iConfiguration;$/;"	m	struct:usb_config_descriptor
+iInterface	./include/lusb0_usb.h	/^    unsigned char  iInterface;$/;"	m	struct:usb_interface_descriptor
+iManufacturer	./include/lusb0_usb.h	/^    unsigned char  iManufacturer;$/;"	m	struct:usb_device_descriptor
+iProduct	./include/lusb0_usb.h	/^    unsigned char  iProduct;$/;"	m	struct:usb_device_descriptor
+iSerialNumber	./include/lusb0_usb.h	/^    unsigned char  iSerialNumber;$/;"	m	struct:usb_device_descriptor
+idProduct	./include/lusb0_usb.h	/^    unsigned short idProduct;$/;"	m	struct:usb_device_descriptor
+idVendor	./include/lusb0_usb.h	/^    unsigned short idVendor;$/;"	m	struct:usb_device_descriptor
+interface	./include/lusb0_usb.h	/^    struct usb_interface *interface;$/;"	m	struct:usb_config_descriptor	typeref:struct:usb_config_descriptor::usb_interface
+interface	./include/lusb0_usb.h	13;"	d
+location	./include/lusb0_usb.h	/^    unsigned long location;$/;"	m	struct:usb_bus
+main	./examples/benchmark.c	/^int main(int argc, char** argv)$/;"	f
+main	./examples/bulk.c	/^int main(void)$/;"	f
+major	./include/lusb0_usb.h	/^        int major;$/;"	m	struct:usb_version::__anon1
+major	./include/lusb0_usb.h	/^        int major;$/;"	m	struct:usb_version::__anon2
+micro	./include/lusb0_usb.h	/^        int micro;$/;"	m	struct:usb_version::__anon1
+micro	./include/lusb0_usb.h	/^        int micro;$/;"	m	struct:usb_version::__anon2
+minor	./include/lusb0_usb.h	/^        int minor;$/;"	m	struct:usb_version::__anon1
+minor	./include/lusb0_usb.h	/^        int minor;$/;"	m	struct:usb_version::__anon2
+nano	./include/lusb0_usb.h	/^        int nano;$/;"	m	struct:usb_version::__anon1
+nano	./include/lusb0_usb.h	/^        int nano;$/;"	m	struct:usb_version::__anon2
+next	./include/lusb0_usb.h	/^    struct usb_bus *next, *prev;$/;"	m	struct:usb_bus	typeref:struct:usb_bus::usb_bus
+next	./include/lusb0_usb.h	/^    struct usb_device *next, *prev;$/;"	m	struct:usb_device	typeref:struct:usb_device::usb_device
+num_altsetting	./include/lusb0_usb.h	/^    int num_altsetting;$/;"	m	struct:usb_interface
+num_children	./include/lusb0_usb.h	/^    unsigned char num_children;$/;"	m	struct:usb_device
+open_dev	./examples/bulk.c	/^usb_dev_handle *open_dev(void)$/;"	f
+prev	./include/lusb0_usb.h	/^    struct usb_bus *next, *prev;$/;"	m	struct:usb_bus	typeref:struct:usb_bus::
+prev	./include/lusb0_usb.h	/^    struct usb_device *next, *prev;$/;"	m	struct:usb_device	typeref:struct:usb_device::
+root_dev	./include/lusb0_usb.h	/^    struct usb_device *root_dev;$/;"	m	struct:usb_bus	typeref:struct:usb_bus::usb_device
+transfer_bulk_async	./examples/bulk.c	/^static int transfer_bulk_async(usb_dev_handle *dev,$/;"	f	file:
+usb_bulk_read	./lib/dynamic/libusb_dyn.c	/^int usb_bulk_read(usb_dev_handle *dev, int ep, char *bytes, int size,$/;"	f
+usb_bulk_read_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_bulk_read_t)(usb_dev_handle *dev, int ep, char *bytes,$/;"	t	file:
+usb_bulk_setup_async	./lib/dynamic/libusb_dyn.c	/^int usb_bulk_setup_async(usb_dev_handle *dev, void **context,$/;"	f
+usb_bulk_setup_async_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_bulk_setup_async_t)(usb_dev_handle *dev, void **context,$/;"	t	file:
+usb_bulk_write	./lib/dynamic/libusb_dyn.c	/^int usb_bulk_write(usb_dev_handle *dev, int ep, char *bytes, int size,$/;"	f
+usb_bulk_write_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_bulk_write_t)(usb_dev_handle *dev, int ep, char *bytes,$/;"	t	file:
+usb_bus	./include/lusb0_usb.h	/^struct usb_bus$/;"	s
+usb_busses	./include/lusb0_usb.h	313;"	d
+usb_claim_interface	./lib/dynamic/libusb_dyn.c	/^int usb_claim_interface(usb_dev_handle *dev, int interface)$/;"	f
+usb_claim_interface_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_claim_interface_t)(usb_dev_handle *dev, int interface);$/;"	t	file:
+usb_clear_halt	./lib/dynamic/libusb_dyn.c	/^int usb_clear_halt(usb_dev_handle *dev, unsigned int ep)$/;"	f
+usb_clear_halt_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_clear_halt_t)(usb_dev_handle *dev, unsigned int ep);$/;"	t	file:
+usb_close	./lib/dynamic/libusb_dyn.c	/^int usb_close(usb_dev_handle *dev)$/;"	f
+usb_close_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_close_t)(usb_dev_handle *dev);$/;"	t	file:
+usb_config_descriptor	./include/lusb0_usb.h	/^struct usb_config_descriptor$/;"	s
+usb_control_msg	./lib/dynamic/libusb_dyn.c	/^int usb_control_msg(usb_dev_handle *dev, int requesttype, int request,$/;"	f
+usb_control_msg_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_control_msg_t)(usb_dev_handle *dev, int requesttype,$/;"	t	file:
+usb_ctrl_setup	./include/lusb0_usb.h	/^struct usb_ctrl_setup$/;"	s
+usb_descriptor_header	./include/lusb0_usb.h	/^struct usb_descriptor_header$/;"	s
+usb_dev_handle	./include/lusb0_usb.h	/^typedef struct usb_dev_handle usb_dev_handle;$/;"	t	typeref:struct:usb_dev_handle
+usb_device	./include/lusb0_usb.h	/^struct usb_device$/;"	s
+usb_device	./lib/dynamic/libusb_dyn.c	/^struct usb_device *usb_device(usb_dev_handle *dev)$/;"	f
+usb_device_descriptor	./include/lusb0_usb.h	/^struct usb_device_descriptor$/;"	s
+usb_device_t	./lib/dynamic/libusb_dyn.c	/^typedef struct usb_device * (*usb_device_t)(usb_dev_handle *dev);$/;"	t	typeref:struct:usb_device_t	file:
+usb_endpoint_descriptor	./include/lusb0_usb.h	/^struct usb_endpoint_descriptor$/;"	s
+usb_find_busses	./lib/dynamic/libusb_dyn.c	/^int usb_find_busses(void)$/;"	f
+usb_find_busses_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_find_busses_t)(void);$/;"	t	file:
+usb_find_devices	./lib/dynamic/libusb_dyn.c	/^int usb_find_devices(void)$/;"	f
+usb_find_devices_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_find_devices_t)(void);$/;"	t	file:
+usb_find_interface	./examples/benchmark.c	/^struct usb_interface_descriptor* usb_find_interface(struct usb_config_descriptor* config_descriptor,$/;"	f
+usb_free_async	./lib/dynamic/libusb_dyn.c	/^int usb_free_async(void **context)$/;"	f
+usb_free_async_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_free_async_t)(void **context);$/;"	t	file:
+usb_get_busses	./lib/dynamic/libusb_dyn.c	/^struct usb_bus *usb_get_busses(void)$/;"	f
+usb_get_busses_t	./lib/dynamic/libusb_dyn.c	/^typedef struct usb_bus * (*usb_get_busses_t)(void);$/;"	t	typeref:struct:usb_get_busses_t	file:
+usb_get_descriptor	./lib/dynamic/libusb_dyn.c	/^int usb_get_descriptor(usb_dev_handle *udev, unsigned char type,$/;"	f
+usb_get_descriptor_by_endpoint	./lib/dynamic/libusb_dyn.c	/^int usb_get_descriptor_by_endpoint(usb_dev_handle *udev, int ep,$/;"	f
+usb_get_descriptor_by_endpoint_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_get_descriptor_by_endpoint_t)(usb_dev_handle *udev, int ep,$/;"	t	file:
+usb_get_descriptor_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_get_descriptor_t)(usb_dev_handle *udev, unsigned char type,$/;"	t	file:
+usb_get_string	./lib/dynamic/libusb_dyn.c	/^int usb_get_string(usb_dev_handle *dev, int index, int langid, char *buf,$/;"	f
+usb_get_string_simple	./lib/dynamic/libusb_dyn.c	/^int usb_get_string_simple(usb_dev_handle *dev, int index, char *buf,$/;"	f
+usb_get_string_simple_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_get_string_simple_t)(usb_dev_handle *dev, int index,$/;"	t	file:
+usb_get_string_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_get_string_t)(usb_dev_handle *dev, int index, int langid,$/;"	t	file:
+usb_get_version	./lib/dynamic/libusb_dyn.c	/^const struct usb_version *usb_get_version(void)$/;"	f
+usb_get_version_t	./lib/dynamic/libusb_dyn.c	/^typedef const struct usb_version * (*usb_get_version_t)(void);$/;"	t	typeref:struct:usb_get_version_t	file:
+usb_hid_descriptor	./include/lusb0_usb.h	/^struct usb_hid_descriptor$/;"	s
+usb_init	./lib/dynamic/libusb_dyn.c	/^void usb_init(void)$/;"	f
+usb_init_t	./lib/dynamic/libusb_dyn.c	/^typedef void (*usb_init_t)(void);$/;"	t	file:
+usb_install_driver_np	./lib/dynamic/libusb_dyn.c	/^int usb_install_driver_np(const char *inf_file)$/;"	f
+usb_install_driver_np_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_install_driver_np_t)(const char *inf_file);$/;"	t	file:
+usb_install_np	./include/lusb0_usb.h	402;"	d
+usb_install_service_np	./lib/dynamic/libusb_dyn.c	/^int usb_install_service_np(void)$/;"	f
+usb_install_service_np_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_install_service_np_t)(void);$/;"	t	file:
+usb_interface	./include/lusb0_usb.h	/^struct usb_interface$/;"	s
+usb_interface_descriptor	./include/lusb0_usb.h	/^struct usb_interface_descriptor$/;"	s
+usb_interrupt_read	./lib/dynamic/libusb_dyn.c	/^int usb_interrupt_read(usb_dev_handle *dev, int ep, char *bytes, int size,$/;"	f
+usb_interrupt_read_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_interrupt_read_t)(usb_dev_handle *dev, int ep, char *bytes,$/;"	t	file:
+usb_interrupt_setup_async	./lib/dynamic/libusb_dyn.c	/^int usb_interrupt_setup_async(usb_dev_handle *dev, void **context,$/;"	f
+usb_interrupt_setup_async_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_interrupt_setup_async_t)(usb_dev_handle *dev, void **context,$/;"	t	file:
+usb_interrupt_write	./lib/dynamic/libusb_dyn.c	/^int usb_interrupt_write(usb_dev_handle *dev, int ep, char *bytes, int size,$/;"	f
+usb_interrupt_write_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_interrupt_write_t)(usb_dev_handle *dev, int ep, char *bytes,$/;"	t	file:
+usb_isochronous_setup_async	./lib/dynamic/libusb_dyn.c	/^int usb_isochronous_setup_async(usb_dev_handle *dev, void **context,$/;"	f
+usb_isochronous_setup_async_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_isochronous_setup_async_t)(usb_dev_handle *dev,$/;"	t	file:
+usb_open	./lib/dynamic/libusb_dyn.c	/^usb_dev_handle *usb_open(struct usb_device *dev)$/;"	f
+usb_open_t	./lib/dynamic/libusb_dyn.c	/^typedef usb_dev_handle * (*usb_open_t)(struct usb_device *dev);$/;"	t	file:
+usb_reap_async	./lib/dynamic/libusb_dyn.c	/^int usb_reap_async(void *context, int timeout)$/;"	f
+usb_reap_async_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_reap_async_t)(void *context, int timeout);$/;"	t	file:
+usb_release_interface	./lib/dynamic/libusb_dyn.c	/^int usb_release_interface(usb_dev_handle *dev, int interface)$/;"	f
+usb_release_interface_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_release_interface_t)(usb_dev_handle *dev, int interface);$/;"	t	file:
+usb_reset	./lib/dynamic/libusb_dyn.c	/^int usb_reset(usb_dev_handle *dev)$/;"	f
+usb_reset_ex	./lib/dynamic/libusb_dyn.c	/^int usb_reset_ex(usb_dev_handle *dev, unsigned int reset_type)$/;"	f
+usb_reset_ex_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_reset_ex_t)(usb_dev_handle *dev, unsigned int reset_type);$/;"	t	file:
+usb_reset_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_reset_t)(usb_dev_handle *dev);$/;"	t	file:
+usb_resetep	./lib/dynamic/libusb_dyn.c	/^int usb_resetep(usb_dev_handle *dev, unsigned int ep)$/;"	f
+usb_resetep_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_resetep_t)(usb_dev_handle *dev, unsigned int ep);$/;"	t	file:
+usb_set_altinterface	./lib/dynamic/libusb_dyn.c	/^int usb_set_altinterface(usb_dev_handle *dev, int alternate)$/;"	f
+usb_set_altinterface_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_set_altinterface_t)(usb_dev_handle *dev, int alternate);$/;"	t	file:
+usb_set_configuration	./lib/dynamic/libusb_dyn.c	/^int usb_set_configuration(usb_dev_handle *dev, int configuration)$/;"	f
+usb_set_configuration_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_set_configuration_t)(usb_dev_handle *dev, int configuration);$/;"	t	file:
+usb_set_debug	./lib/dynamic/libusb_dyn.c	/^void usb_set_debug(int level)$/;"	f
+usb_set_debug_t	./lib/dynamic/libusb_dyn.c	/^typedef void (*usb_set_debug_t)(int level);$/;"	t	file:
+usb_strerror	./lib/dynamic/libusb_dyn.c	/^char *usb_strerror(void)$/;"	f
+usb_strerror_t	./lib/dynamic/libusb_dyn.c	/^typedef char * (*usb_strerror_t)(void);$/;"	t	file:
+usb_string_descriptor	./include/lusb0_usb.h	/^struct usb_string_descriptor$/;"	s
+usb_submit_async	./lib/dynamic/libusb_dyn.c	/^int usb_submit_async(void *context, char *bytes, int size)$/;"	f
+usb_submit_async_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_submit_async_t)(void *context, char *bytes, int size);$/;"	t	file:
+usb_uninstall_service_np	./lib/dynamic/libusb_dyn.c	/^int usb_uninstall_service_np(void)$/;"	f
+usb_uninstall_service_np_t	./lib/dynamic/libusb_dyn.c	/^typedef int (*usb_uninstall_service_np_t)(void);$/;"	t	file:
+usb_version	./include/lusb0_usb.h	/^struct usb_version$/;"	s
+wData	./include/lusb0_usb.h	/^    unsigned short wData[1];$/;"	m	struct:usb_string_descriptor
+wIndex	./include/lusb0_usb.h	/^    unsigned short wIndex;$/;"	m	struct:usb_ctrl_setup
+wLength	./include/lusb0_usb.h	/^    unsigned short wLength;$/;"	m	struct:usb_ctrl_setup
+wMaxPacketSize	./include/lusb0_usb.h	/^    unsigned short wMaxPacketSize;$/;"	m	struct:usb_endpoint_descriptor
+wTotalLength	./include/lusb0_usb.h	/^    unsigned short wTotalLength;$/;"	m	struct:usb_config_descriptor
+wValue	./include/lusb0_usb.h	/^    unsigned short wValue;$/;"	m	struct:usb_ctrl_setup

@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo apt install -y openocd
+sudo apt install -y sshpass
+
+cat xaa >gcc.tgz
+cat xab >>gcc.tgz
+cat xac >>gcc.tgz
+tar zxvf  gcc.tgz
+rm -f gcc.tgz

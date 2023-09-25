@@ -1,0 +1,2 @@
+#!/usr/bin/ksh
+sshpass -p ${WIN_PASSWORD} scp -r  * ${WIN_USER}@${WIN_IP}:C:\\Users\\${WIN_USER}\\Desktop\\powerlab_client

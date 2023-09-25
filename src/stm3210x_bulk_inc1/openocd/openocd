@@ -1,0 +1,89 @@
+#!/bin/sh
+#
+# To use:
+# 
+# 1) Put somewhere convenient and rename "openocd"
+# 2) Tweak the OPENOCD_CFG_DIR to point to the location where
+#    you keep the configuration file (stm32f3-discovery.cfg).
+#    That file will also need to be modified to point to the 
+#    other two configuration / procedure files.  Hey, it ain't
+#    pretty, but it works.
+# 4) Tweak OPENOCD_BIN to specify the path to the openocd
+#    daemon executable (version 0.9 or later required for SWD)
+# 5) Tweak OPENOCD_DEBUG_ARGS to set the desired debug level. 
+#
+
+OPENOCD_CFG_DIR="$HOME/openocd"
+OPENOCD_CFG="${OPENOCD_CFG_DIR}/stm32f3-discovery.cfg"
+OPENOCD_ARGS="-f ${OPENOCD_CFG}"
+OPENOCD_BIN="/usr/bin/openocd"
+OPENOCD_DEBUG_ARGS="-d3"
+OPENOCD_PID_FILE="/tmp/openocd.pid"
+
+if [ ! -d ${OPENOCD_PATH} ]; then
+    echo "OpenOCD path does not exist: ${OPENOCD_PATH}"
+    exit 1
+fi
+
+if [ ! -x ${OPENOCD_BIN} ]; then
+    echo "OpenOCD does not exist: ${OPENOCD_BIN}"
+    exit 1
+fi
+
+if [ ! -f ${OPENOCD_CFG} ]; then
+    echo "OpenOCD config file does not exist: ${OPENOCD_CFG}"
+    exit 1
+fi
+
+# backgrounded tasks always return 0 so we have to check to 
+# make sure the daemon is running before we try to write the
+# pid, otherwise we're creating a false paper trail.
+start_daemon() {
+    cmd=$1
+    $cmd &
+    OCDPID=$!
+    sleep 1
+    pid=$(pgrep -f "$OPENOCD_BIN")
+    if [ -n "$pid" ]; then
+	echo $OCDPID > $OPENOCD_PID_FILE
+	echo "OpenOCD daemon started, PID = $OCDPID"
+    else
+	echo "Trouble starting OpenOCD.  Can't find pid in process table."
+    fi
+}
+
+case "$1" in
+    start)
+    echo "Starting OpenOCD."
+    start_daemon "$OPENOCD_BIN $OPENOCD_ARGS"
+    ;;
+    
+    debug)
+    echo "Starting OpenOCD with $OPENOCD_DEBUG_ARGS."
+    start_daemon "$OPENOCD_BIN $OPENOCD_DEBUG_ARGS"
+    ;;
+    
+    stop)
+    if [ -f "$OPENOCD_PID_FILE" ]; then
+	PID=$(head -n 1 "$OPENOCD_PID_FILE")
+    fi
+    
+    if [ -n "$PID" ]; then
+	kill -15 $PID
+	sleep 2
+	rm -f $PID
+    else
+	echo "OpenOCD daemon not running (could not find pid)"
+    fi
+    ;;
+
+    restart)
+    $0 stop
+    $0 start
+    ;;
+    
+    *)
+    echo "Usage: openocd {start|stop|restart}" >&2
+    exit 1
+    ;;
+esac

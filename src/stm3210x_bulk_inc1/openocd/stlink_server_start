@@ -1,0 +1,2 @@
+#!/usr/bin/ksh
+sudo openocd -f st-link-swd-stm32f10x.cfg

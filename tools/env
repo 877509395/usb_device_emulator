@@ -1,0 +1,10 @@
+HOME=$HOME:`pwd`/gcc-arm-none-eabi-10.3-2021.10:`pwd`
+
+WIN_USER=xxx
+export WIN_USER
+
+WIN_IP=x.x.x.x
+export WIN_IP
+
+WIN_PASSWORD=xxx
+export WIN_PASSWORD
